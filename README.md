@@ -2,10 +2,11 @@
 
 Virtual Fruits portable is the mobile version of the game [Virtual Fruits](https://github.com/OscarLM32/Virtual-Fruits).
 In order to adjust the game to the new device and market the genre of the game has been switch from a "platformer" game to 
-"finite runner".
+"finite runner". 
 
 In this version, the players must face a single long level with different enemies,
 hazards and items in order to get the best score to position themselves on top of the ladder.
+
 ---
 
 ## Implementation summary
