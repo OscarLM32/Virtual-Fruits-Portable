@@ -44,3 +44,4 @@ hazards and items in order to get the best score to position themselves on top o
 * User input improvement
 * Character movement adjustment
 * Spring enemies adjustment
+* Spanish language support addition
