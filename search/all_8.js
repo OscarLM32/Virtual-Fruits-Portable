@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['i_0',['I',['../class_enemy_projectile_pool.html#a581842255ec5db3645fa8873cdcaff1d',1,'EnemyProjectilePool']]],
+  ['ikillable_1',['IKillable',['../interface_i_killable.html',1,'']]],
+  ['ikillable_2ecs_2',['IKillable.cs',['../_i_killable_8cs.html',1,'']]],
+  ['images_3',['Images',['../class_parallax_layer.html#a09859f59fa76506ed283fe53bf0637f2',1,'ParallaxLayer']]],
+  ['initialdashvelocity_4',['InitialDashVelocity',['../class_player_state_machine.html#a2c398240cae4a40d976ea70739d43a63',1,'PlayerStateMachine']]],
+  ['initialdirection_5',['InitialDirection',['../class_bunny_behaviour.html#a4b0d16628ea6f81c6897a74b43061305',1,'BunnyBehaviour']]],
+  ['initialjumpvelocity_6',['InitialJumpVelocity',['../class_player_state_machine.html#ace1177d76d57b58b51378dd034f29870',1,'PlayerStateMachine']]],
+  ['inputmanager_7',['InputManager',['../class_input_manager.html',1,'']]],
+  ['inputmanager_2ecs_8',['InputManager.cs',['../_input_manager_8cs.html',1,'']]],
+  ['instance_9',['Instance',['../class_save_load_system.html#ae5fff0f615bdeacfab94fdc23f3d0086',1,'SaveLoadSystem']]],
+  ['isgrounded_10',['IsGrounded',['../class_player_state_machine.html#ab1d0d0e6ffe71e8b13214935fdb6db2b',1,'PlayerStateMachine']]],
+  ['isupwardsdash_11',['IsUpwardsDash',['../class_player_state_machine.html#a4881413198c46c6b9cef778e20dec110',1,'PlayerStateMachine']]],
+  ['item_12',['Item',['../class_item.html',1,'']]],
+  ['item_2ecs_13',['Item.cs',['../_item_8cs.html',1,'']]],
+  ['itemdata_14',['ItemData',['../class_item.html#afbe1a184d4164f10e818408c93d0503c',1,'Item']]],
+  ['itemso_15',['ItemSO',['../class_item_s_o.html',1,'']]],
+  ['itemso_2ecs_16',['ItemSO.cs',['../_item_s_o_8cs.html',1,'']]],
+  ['itemsprite_17',['ItemSprite',['../class_item_s_o.html#a642349658bea5d6667c9f89105aa7f2a',1,'ItemSO']]],
+  ['itemtype_18',['ItemType',['../class_item_s_o.html#acd854cbc2c91853b9777709d06c140f1',1,'ItemSO.ItemType()'],['../_item_s_o_8cs.html#a443f647757dde85043b49343f5cbe66b',1,'ItemType():&#160;ItemSO.cs']]]
+];
