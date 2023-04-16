@@ -8,5 +8,5 @@ var searchData=
   ['playergroundstate_5',['PlayerGroundState',['../class_player_ground_state.html#a0b8cc0cbf063a3b9566be3232c06c108',1,'PlayerGroundState']]],
   ['playerjumpingstate_6',['PlayerJumpingState',['../class_player_jumping_state.html#a0e678566d889bfd6964ed420b6dc9d47',1,'PlayerJumpingState']]],
   ['playerstatefactory_7',['PlayerStateFactory',['../class_player_state_factory.html#ab6d3f40415e645b2afd72213852cc964',1,'PlayerStateFactory']]],
-  ['playerverticaldashingstate_8',['PlayerVerticalDashingState',['../class_player_1_1_state_machine_1_1_states_1_1_player_vertical_dashing_state.html#a7a500e3d0861ef7b5a3679e5dc760e49',1,'Player::StateMachine::States::PlayerVerticalDashingState']]]
+  ['playerverticaldashingstate_8',['PlayerVerticalDashingState',['../class_player_vertical_dashing_state.html#a2e5fc7f514f74a77eae54095970bbbef',1,'PlayerVerticalDashingState']]]
 ];

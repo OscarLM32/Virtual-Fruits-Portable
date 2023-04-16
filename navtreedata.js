@@ -26,11 +26,7 @@ var NAVTREE =
 [
   [ "Virtual Fruits Portable", "index.html", [
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
-      [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ]
-      ] ]
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -58,7 +54,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_ads_manager_8cs.html",
-"class_snail_out_shell.html"
+"class_snail_state_machine.html#afd1a6cd7fb646195e3be1baacc8e54e0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

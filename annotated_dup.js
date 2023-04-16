@@ -1,12 +1,5 @@
 var annotated_dup =
 [
-    [ "Player", "namespace_player.html", [
-      [ "StateMachine", "namespace_player_1_1_state_machine.html", [
-        [ "States", "namespace_player_1_1_state_machine_1_1_states.html", [
-          [ "PlayerVerticalDashingState", "class_player_1_1_state_machine_1_1_states_1_1_player_vertical_dashing_state.html", "class_player_1_1_state_machine_1_1_states_1_1_player_vertical_dashing_state" ]
-        ] ]
-      ] ]
-    ] ],
     [ "AdsManager", "class_ads_manager.html", "class_ads_manager" ],
     [ "BackgroundSwitchTrigger", "class_background_switch_trigger.html", "class_background_switch_trigger" ],
     [ "BeeBehaviour", "class_bee_behaviour.html", "class_bee_behaviour" ],
@@ -31,6 +24,7 @@ var annotated_dup =
     [ "PlayerJumpingState", "class_player_jumping_state.html", "class_player_jumping_state" ],
     [ "PlayerStateFactory", "class_player_state_factory.html", "class_player_state_factory" ],
     [ "PlayerStateMachine", "class_player_state_machine.html", "class_player_state_machine" ],
+    [ "PlayerVerticalDashingState", "class_player_vertical_dashing_state.html", "class_player_vertical_dashing_state" ],
     [ "PlayerWeapon", "class_player_weapon.html", "class_player_weapon" ],
     [ "SaveLoadSystem", "class_save_load_system.html", "class_save_load_system" ],
     [ "ScoreManager", "class_score_manager.html", "class_score_manager" ],

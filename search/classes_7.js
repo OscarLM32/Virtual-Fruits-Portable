@@ -10,6 +10,6 @@ var searchData=
   ['playerjumpingstate_7',['PlayerJumpingState',['../class_player_jumping_state.html',1,'']]],
   ['playerstatefactory_8',['PlayerStateFactory',['../class_player_state_factory.html',1,'']]],
   ['playerstatemachine_9',['PlayerStateMachine',['../class_player_state_machine.html',1,'']]],
-  ['playerverticaldashingstate_10',['PlayerVerticalDashingState',['../class_player_1_1_state_machine_1_1_states_1_1_player_vertical_dashing_state.html',1,'Player::StateMachine::States']]],
+  ['playerverticaldashingstate_10',['PlayerVerticalDashingState',['../class_player_vertical_dashing_state.html',1,'']]],
   ['playerweapon_11',['PlayerWeapon',['../class_player_weapon.html',1,'']]]
 ];

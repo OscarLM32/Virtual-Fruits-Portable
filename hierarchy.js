@@ -46,10 +46,10 @@ var hierarchy =
       [ "Timer", "class_timer.html", null ]
     ] ],
     [ "PlayerBaseState", "class_player_base_state.html", [
-      [ "Player.StateMachine.States.PlayerVerticalDashingState", "class_player_1_1_state_machine_1_1_states_1_1_player_vertical_dashing_state.html", null ],
       [ "PlayerFallState", "class_player_fall_state.html", null ],
       [ "PlayerGroundState", "class_player_ground_state.html", null ],
-      [ "PlayerJumpingState", "class_player_jumping_state.html", null ]
+      [ "PlayerJumpingState", "class_player_jumping_state.html", null ],
+      [ "PlayerVerticalDashingState", "class_player_vertical_dashing_state.html", null ]
     ] ],
     [ "PlayerStateFactory", "class_player_state_factory.html", null ],
     [ "ScriptableObject", null, [

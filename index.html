@@ -1,8 +1,10 @@
+<!-- HTML header for doxygen 1.8.17-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Virtual Fruits Portable: Main Page</title>
@@ -16,16 +18,25 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+        <!-- ... other metadata & script includes ... -->
+        <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+        <script type="text/javascript">
+            DoxygenAwesomeDarkModeToggle.init()
+        </script>
+
+
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
-  <td id="projectalign">
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Virtual Fruits Portable
    </div>
    <div id="projectbrief">Scroll runner videogame for android mobile devices.</div>
@@ -94,6 +105,92 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Virtual Fruits Portable Documentation</div></div>
 </div><!--header-->
 <div class="contents">
+<p>Virtual Fruits portable is the mobile version of the game <a href="https://github.com/OscarLM32/Virtual-Fruits">Virtual Fruits</a>.
+In order to adjust the game to the new device and market the genre of the game has been switch from a &quot;platformer&quot; game to 
+&quot;finite runner&quot;. </p>
+<p>In this version, the players must face a single long level with different enemies,
+hazards and items in order to get the best score to position themselves on top of the ladder.</p>
+<hr>
+<h2 id="implementation-summary">Implementation summary</h2>
+<div class="mydiv"><table class="mytable">
+		<tr>
+			<th scope="row"><strong>Implemented</strong></th>
+			<th scope="row"><strong>Not implemented</strong></th>
+		</tr>
+		<tr>
+			<td>Basic character movement &check;</td>
+			<td>Autumn enemies and hazards &cross;</td>
+		</tr>
+		<tr>
+			<td>All four zones &check;</td>
+			<td>Winter enemies and hazards &cross;</td>
+		</tr>
+		<tr>
+			<td>All different zones&#39; items &check;</td>
+			<td>Summer enemies and hazards &cross;</td>
+		</tr>
+		<tr>
+			<td>Spring zone enemies &check;</td>
+			<td>Worldwide-connected score ladder &cross;</td>
+		</tr>
+		<tr>
+			<td>Score system &check;</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Combat &check;</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Spring environmental hazard &check;</td>
+			<td></td>
+		</tr>
+	</table></div>
+<hr>
+<h2 id="progress-showcase">Progress showcase</h2>
+<h4 id="character">Character</h4>
+
+<div class="mydiv"><table class="mytable">
+	<tr>
+		<th style="text-align:center">Character movement</th>
+		<th style="text-align:center">Character velocity</th>
+	</tr>
+	<tr>
+		<td style="text-align:center"><img src="img/Movement.gif" alt="Character movement and combat"></td>
+		<td style="text-align:center"><img src="img/Velocity.gif" alt="Character velocity"></td>
+	</tr>
+</table></div>
+
+<h4 id="enemies">Enemies</h4>
+
+<div><table class="mytable">
+	<tr>
+		<th style="text-align:center">Bee</th>
+		<th style="text-align:center">Bunny</th>
+	</tr>
+	<tr>
+		<td style="text-align:center"><img src="img/Bee.gif" alt="Bee"></td>
+		<td style="text-align:center"><img src="img/Bunny.gif" alt="Bunny"></td>
+	</tr>
+	<tr>
+		<th style="text-align:center"><strong>Snail</strong></td>
+		<th style="text-align:center"><strong>Plant and combat</strong></td>
+	</tr>
+	<tr>
+		<td style="text-align:center"><img src="img/Snail.gif" alt="Snail"></td>
+		<td style="text-align:center"><img src="img/Plant.gif" alt="Plant and combat"></td>
+	</tr>
+</table></div>
+
+<h3 id="work-in-progress">Work in progress</h3>
+<ul>
+<li>UI improvement </li>
+<li>User input improvement</li>
+<li>Character movement adjustment</li>
+<li>Spring enemies adjustment</li>
+<li>Spanish language support addition</li>
+</ul>
+
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
@@ -102,5 +199,51 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
+
+<style>
+
+.mydiv{
+  display: flex !important;
+}
+
+.mytable {
+  border: 1px solid #ccc !important;
+  border-collapse: collapse !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  table-layout: fixed !important;
+  display: inline-table !important;
+}
+
+.mytable tbody{
+	display: table-row-group !important;
+}
+
+.mytable caption {
+  font-size: 1.5em !important;
+  margin: .5em 0 .75em !important;
+}
+
+.mytable tr {
+  background-color: #f8f8f8 !important;
+  border: 1px solid #ddd !important;
+  padding: .35em !important;
+}
+
+.mytable th,
+.mytable td {
+  padding: .625em !important;
+  text-align: center !important;
+}
+
+.mytable th {
+  font-size: .85em !important;
+  letter-spacing: .1em !important;
+  text-transform: uppercase !important;
+}
+
+</style>
 </body>
+
 </html>
