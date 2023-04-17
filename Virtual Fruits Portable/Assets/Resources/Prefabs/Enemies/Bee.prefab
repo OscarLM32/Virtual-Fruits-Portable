@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3154994747649194169}
   - component: {fileID: 3154994747649194054}
   - component: {fileID: 3154994747649194176}
-  - component: {fileID: 3154994747649194177}
   m_Layer: 7
   m_Name: Bee
   m_TagString: BeeEnemy
@@ -54,6 +53,7 @@ MonoBehaviour:
   pathType: 2
   patrolId: 
   easeType: 1
+  loopType: 1
 --- !u!114 &752812251374837958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,7 +66,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66a5a4122b8e970468b034f7efb545af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProjectileType: 0
+  projectileType: 0
+  projectileDirection: 1
+  attackSpeed: 3
 --- !u!95 &3154994747649194169
 Animator:
   serializedVersion: 4
@@ -165,24 +167,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.45412064, y: 0.6712837}
   m_EdgeRadius: 0
---- !u!50 &3154994747649194177
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3154994747649194055}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4

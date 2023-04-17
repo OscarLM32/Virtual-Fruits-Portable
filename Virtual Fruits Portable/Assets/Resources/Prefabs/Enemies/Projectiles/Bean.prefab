@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8875561843751952858}
-  - component: {fileID: 8603280624844738848}
+  - component: {fileID: -786148632362633783}
+  - component: {fileID: -1479336597684991308}
   - component: {fileID: 8875561843751952859}
   - component: {fileID: 8875561843751952856}
   - component: {fileID: 8875561843751952860}
@@ -35,7 +36,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8603280624844738848
+--- !u!114 &-786148632362633783
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,11 +45,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 8875561843751952861}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0a8da2393b020a4daddcf51d2710c1a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a61f37fc8d56864198eb95d044db1a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Particles: {fileID: 8320350945683519366, guid: ed27da43809eb38499a59bcb7d19a87b, type: 3}
-  Direction: 1
+  soundPlayer: {fileID: -3915042185110953622, guid: f0dcd6ce3387d12489acb27a3d213d90, type: 3}
+  particlesObject: {fileID: 8320350945683519366, guid: ed27da43809eb38499a59bcb7d19a87b, type: 3}
+  speed: 8
+--- !u!114 &-1479336597684991308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8875561843751952861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c9bd38c8139914eadf6a01f12d2314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundList: {fileID: 11400000, guid: abbfee36efd016f40b6c91638439c1d2, type: 2}
 --- !u!212 &8875561843751952859
 SpriteRenderer:
   m_ObjectHideFlags: 0

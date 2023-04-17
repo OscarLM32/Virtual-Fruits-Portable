@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8875561843751952858}
-  - component: {fileID: 3157006853067752441}
+  - component: {fileID: 1247618596248524263}
+  - component: {fileID: -3915042185110953622}
   - component: {fileID: 8875561843751952859}
   - component: {fileID: 8875561843751952856}
   - component: {fileID: 8875561843751952860}
@@ -35,7 +36,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3157006853067752441
+--- !u!114 &1247618596248524263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,10 +45,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 8875561843751952861}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27ad3f5393fd4d7499f882ffebc1c1f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a61f37fc8d56864198eb95d044db1a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Particles: {fileID: 9097652137764481939, guid: e2324ec01e749ee4c90d9d6bb1fc39ee, type: 3}
+  soundPlayer: {fileID: -3915042185110953622}
+  particlesObject: {fileID: 9097652137764481939, guid: e2324ec01e749ee4c90d9d6bb1fc39ee, type: 3}
+  speed: 8
+--- !u!114 &-3915042185110953622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8875561843751952861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c9bd38c8139914eadf6a01f12d2314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundList: {fileID: 11400000, guid: abbfee36efd016f40b6c91638439c1d2, type: 2}
 --- !u!212 &8875561843751952859
 SpriteRenderer:
   m_ObjectHideFlags: 0

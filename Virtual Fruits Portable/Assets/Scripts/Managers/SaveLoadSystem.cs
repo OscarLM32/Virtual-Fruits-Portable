@@ -50,14 +50,12 @@ public class SaveLoadSystem : MonoBehaviour
 
     private void CheckNewMaxScore(int newScore)
     {
-        int aux, newBestValue = newScore;
+        int newBestValue = newScore;
         for (int i = 0; i < _gameDataSave.MaxScores.Length; i++)
         {
             if (newBestValue > _gameDataSave.MaxScores[i])
             {
-                aux = _gameDataSave.MaxScores[i];
-                _gameDataSave.MaxScores[i] = newBestValue;
-                newBestValue = aux;
+                (_gameDataSave.MaxScores[i], newBestValue) = (newBestValue, _gameDataSave.MaxScores[i]);
             }
         }
     }

@@ -29,27 +29,27 @@ public class MainMenu : MonoBehaviour
 
     public void OpenMenu(GameObject menu)
     {
-        AudioManager.Instance.Play(gameObject, SoundList.Button);
+        //AudioManager.Instance.Play(gameObject, SoundList.Button);
         MainMenuOptions.SetActive(false);
         menu.SetActive(true);
     }
 
     public void CloseMenu(GameObject menu)
     {
-        AudioManager.Instance.Play(gameObject, SoundList.Button);
+        //AudioManager.Instance.Play(gameObject, SoundList.Button);
         menu.SetActive(false);
         MainMenuOptions.SetActive(true);
     }
 
     public void Play()
     {
-        AudioManager.Instance.Play(gameObject, SoundList.Button);
+        //AudioManager.Instance.Play(gameObject, SoundList.Button);
         SceneManager.LoadScene(1);
     }
 
     public void CloseApp()
     {
-        AudioManager.Instance.Play(gameObject, SoundList.Button);
+        //AudioManager.Instance.Play(gameObject, SoundList.Button);
         Application.Quit();
     }
     

@@ -1,5 +1,4 @@
-﻿using System;
-using DefaultNamespace;
+﻿
 using UnityEngine;
 
 public class BackgroundSwitchTrigger : MonoBehaviour

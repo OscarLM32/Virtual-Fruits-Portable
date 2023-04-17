@@ -1,17 +1,26 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
+/// <summary>
+/// Handles the logic behind the score of the player
+/// </summary>
 public class ScoreManager : MonoBehaviour
 {
     public TextMeshProUGUI ScoreText;
 
+    /// <summary>
+    /// The number of digits the formatting of the score is going to have 
+    /// </summary>
     private const int _formattingDigitNumber = 5;
     
+    /// <summary>
+    /// The amount of points to get when picking an item
+    /// </summary>
     private const int _itemPickScore = 100;
+    
+    /// <summary>
+    /// The amount of points to get when killing an enemy
+    /// </summary>
     private const int _enemyKillScore = 300;
     
     public static int Score;
@@ -35,16 +44,26 @@ public class ScoreManager : MonoBehaviour
         GameplayEvents.EnemyKilled -= OnEnemyKilled;
     }
 
+    /// <summary>
+    /// Logic when an item is picked
+    /// </summary>
     private void OnItemPicked()
     {
         UpdateScore(_itemPickScore);
     }
 
+    /// <summary>
+    /// Logic when an enemy is killed
+    /// </summary>
     private void OnEnemyKilled()
     {
         UpdateScore(_enemyKillScore);
     }
     
+    /// <summary>
+    /// Adds new points to the total score and updates the display of the these points
+    /// </summary>
+    /// <param name="value">New score points obtained</param>
     private void UpdateScore(int value)
     {
         Score += value;

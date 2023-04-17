@@ -1,10 +1,15 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Behaviour of the "Bunny" enemy
+/// </summary>
 public class BunnyBehaviour : MonoBehaviour, IKillable
 {
+    /// <summary>
+    /// Static class containing the animations' names of the Bunny enemy 
+    /// </summary>
     private static class BunnyAnimations
     {
         public static readonly string Jump = "BunnyJump";
@@ -12,10 +17,18 @@ public class BunnyBehaviour : MonoBehaviour, IKillable
         public static readonly string Hit = "BunnyHit";
     }
 
+    /// <summary>
+    /// Initial direction towards where it is gonna start patrolling
+    /// </summary>
+    /// <remarks> 1 -> right and -1 -> left</remarks>
     public int InitialDirection = 1;
+    
+    /// <summary>
+    /// The number of jumps in the patrol before turning around
+    /// </summary>
     public int JumpsLoopCount = 3;
+    
     public Transform GroundChecker;
-
     public LayerMask GroundLayer;
 
     private Animator _animator;
@@ -30,8 +43,12 @@ public class BunnyBehaviour : MonoBehaviour, IKillable
     private float _initialJumpVelocity;
     private float _jumpingGravityFactor;
 
-    private bool _jumping = false;
+    private bool _isJumping = false;
     private bool _isGrounded = true;
+    
+    /// <summary>
+    /// Stores the logic whether the enemy has been hit by the player or not
+    /// </summary> 
     private bool _hit = false;
 
     private void Start()
@@ -51,9 +68,9 @@ public class BunnyBehaviour : MonoBehaviour, IKillable
             return;
 
         HandleGrounded();
-        if (_rb.velocity.y >= 0)
+        if (_isGrounded)
             HandleJump();
-        else
+        else if(_rb.velocity.y <= 0)
             HandleFall();
     }
 
@@ -69,18 +86,24 @@ public class BunnyBehaviour : MonoBehaviour, IKillable
         _isGrounded = false;
         Vector2 position = GroundChecker.position;
         if (Physics2D.OverlapBox(position, new Vector2(0.45f, 0.1f), 0, GroundLayer) &&
-            !_jumping)
+            !_isJumping)
         {
             _isGrounded = true;
         }
     }
 
+    /// <summary>
+    /// Handles the jump of the bunny by adding an initial upwards velocity calculated in "SetUpJumpVariables" and
+    /// horizontal velocity in the actual direction.
+    /// </summary>
+    /// <seealso cref="SetUpJumpVariables"/>
     private void HandleJump()
     {
         if (!_isGrounded)
             return;
 
-        _jumping = true;
+        //Necessary so the "HandleGrounded" does not return true while performing the jump
+        _isJumping = true;
         
         _rb.velocity = new Vector2(_speed * _currentDirection, _initialJumpVelocity);
         transform.localScale = new Vector3(_currentDirection * -0.8f, 0.8f, 1f);
@@ -93,16 +116,22 @@ public class BunnyBehaviour : MonoBehaviour, IKillable
             _jumpCount = 0;
         }
 
-        AudioManager.Instance.Play(gameObject, SoundList.EnemyBunnyJump);
+        //AudioManager.Instance.Play(gameObject, SoundList.EnemyBunnyJump);
         _animator.Play(BunnyAnimations.Jump);
     }
 
+    /// <summary>
+    /// Handle the fall of the enemy, setting the _isJumping variable to false and play the proper animation
+    /// </summary>
     private void HandleFall()
     {
-        _jumping = false;
+        _isJumping = false;
         _animator.Play(BunnyAnimations.Fall);
     }
 
+    /// <summary>
+    /// Sets up the jump variables based on Verlet's integration method
+    /// </summary>
     private void SetUpJumpVariables()
     {
         float timeToApex = _maxJumpTime / 2;
@@ -111,16 +140,28 @@ public class BunnyBehaviour : MonoBehaviour, IKillable
         _jumpingGravityFactor = (desiredGravity / -9.8f);
     }
 
+    
+    /// <summary>
+    /// Behaviour when the enemy is killed
+    /// </summary>
+    /// <param name="other">The GameObject that killed the enemy</param>
+    /// <returns>Wait times</returns>
     private IEnumerator OnKill(GameObject other)
     {
         _hit = true;
+        //Disable the collider so it does not collide with anything
         GetComponent<Collider2D>().enabled = false;
         LaunchEnemy(other);
+        //Play the collision animation
         _animator.Play(BunnyAnimations.Hit);
         yield return new WaitForSeconds(1.5f);
         Destroy(gameObject);
     }
     
+    /// <summary>
+    /// Adds a force that throws 
+    /// </summary>
+    /// <param name="other"></param>
     private void LaunchEnemy(GameObject other)
     {
         //It must have a collider because for the time being it should only be collided by the player 

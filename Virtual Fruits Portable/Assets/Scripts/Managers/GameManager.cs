@@ -1,18 +1,20 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Handles the logic behind events that "disrupt" the gameplay
+/// </summary>
 public class GameManager : MonoBehaviour
 {
-    
+    /// <summary>
+    /// Reference to an ad manager so it can play ads
+    /// </summary>
     public AdsManager AdsManager;
 
     private void Start()
     {
-        AudioManager.Instance.Play(gameObject, SoundList.LevelTheme);
+        //Should the game manager handle the playing of the main theme logic?
+        //AudioManager.Instance.Play(gameObject, SoundList.LevelTheme);
     }
 
     private void OnEnable()

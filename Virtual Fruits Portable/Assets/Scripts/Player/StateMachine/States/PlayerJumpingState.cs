@@ -1,8 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
+/// <summary>
+/// State that handles the logic of the player when it is jumping
+/// </summary>
 public class PlayerJumpingState : PlayerBaseState
 {
     private static class JumpingAnimations
@@ -20,7 +20,7 @@ public class PlayerJumpingState : PlayerBaseState
         HandleGravity();
         HandleJump();
         HandleAnimation();
-        AudioManager.Instance.Play(Context.gameObject,SoundList.PlayerJump);
+        //AudioManager.Instance.Play(Context.gameObject,SoundList.PlayerJump);
     }
 
     public override void UpdateState()
@@ -64,6 +64,9 @@ public class PlayerJumpingState : PlayerBaseState
         Context.PlayerAnimator.Play(JumpingAnimations.Jump);
     }
 
+    /// <summary>
+    /// Makes the player jump adding the calculated initial velocity in the y axis
+    /// </summary>
     private void HandleJump()
     {
         Context.Rb2D.velocity = new Vector2(Context.Rb2D.velocity.x, Context.InitialJumpVelocity);

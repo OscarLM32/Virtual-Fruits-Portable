@@ -1,13 +1,17 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// Handles the timer of how long has the player been in the level
+/// </summary>
 public class Timer : MonoBehaviour
 {
+    /// <summary>
+    /// The component that displays the time in the UI
+    /// </summary>
     public TextMeshProUGUI TimerText;
 
+    //TODO: design a way to make this time representative in the final score
     public static float TimeElapsed;
 
     private void Start()
@@ -21,6 +25,9 @@ public class Timer : MonoBehaviour
         FormatTimerText();
     }
 
+    /// <summary>
+    /// Formats the time stores in a total count of seconds into the format "minutes:seconds" 
+    /// </summary>
     private void FormatTimerText()
     {
         string finalText = "";

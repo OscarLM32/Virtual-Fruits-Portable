@@ -1,6 +1,8 @@
-using Player.StateMachine;
 using UnityEngine;
 
+/// <summary>
+/// State that handles the logic of the player when it is grounded
+/// </summary>
 public class PlayerGroundState : PlayerBaseState
 {
     private static class GroundedAnimations
@@ -57,15 +59,15 @@ public class PlayerGroundState : PlayerBaseState
     {
         //All animation are the same with different speeds, but will be left like this
         //So in the future, whenever we have an animation for each state the change is easier
-        switch (Context.CurrentMovementState)
+        switch (Context.CurrentMovementType)
         {
-            case PlayerMovementState.Walk:
+            case PlayerMovementType.Walk:
                 Context.PlayerAnimator.Play(GroundedAnimations.Walk);
                 break;
-            case PlayerMovementState.Run:
+            case PlayerMovementType.Run:
                 Context.PlayerAnimator.Play(GroundedAnimations.Run);
                 break;
-            case PlayerMovementState.Sprint:
+            case PlayerMovementType.Sprint:
                 Context.PlayerAnimator.Play(GroundedAnimations.Sprint);
                 break;
         }

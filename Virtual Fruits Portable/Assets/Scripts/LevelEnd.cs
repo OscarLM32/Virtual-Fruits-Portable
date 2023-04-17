@@ -1,5 +1,4 @@
 using System.Collections;
-using DefaultNamespace;
 using UnityEngine;
 
 public class LevelEnd : MonoBehaviour
@@ -9,7 +8,7 @@ public class LevelEnd : MonoBehaviour
         if (col.gameObject.layer == (int)LayerValues.PlayerLayer)
         {
             GetComponent<Animator>().enabled = true;
-            AudioManager.Instance.Play(gameObject,SoundList.Victory);
+            //AudioManager.Instance.Play(gameObject,SoundList.Victory);
             yield return new WaitForSeconds(1f);
             GameplayEvents.LevelEndReached?.Invoke();
         }

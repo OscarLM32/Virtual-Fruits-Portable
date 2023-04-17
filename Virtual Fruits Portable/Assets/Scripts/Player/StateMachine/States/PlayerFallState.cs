@@ -1,14 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-//TODO: refactor class name to "PlayerFallingState"
+/// <summary>
+/// State that handles the logic of the player when it is falling
+/// </summary>
 public class PlayerFallState : PlayerBaseState
 {
     private static class FallingAnimations
     {
         public static readonly string Fall = "PlayerFall";
     }
+    
+    /// <summary>
+    /// Max speed the player can fall from the air at
+    /// </summary>
     private const float maxFallVelocity = -20;
 
     public PlayerFallState(PlayerStateMachine currentContext, PlayerStateFactory playerStateFactory)
@@ -59,6 +63,9 @@ public class PlayerFallState : PlayerBaseState
         Context.PlayerAnimator.Play(FallingAnimations.Fall);
     }
     
+    /// <summary>
+    /// Limits the max speed at which the player can fall down
+    /// </summary>
     private void CheckMaxFallVelocity()
     {
         Vector2 velocity = Context.Rb2D.velocity;

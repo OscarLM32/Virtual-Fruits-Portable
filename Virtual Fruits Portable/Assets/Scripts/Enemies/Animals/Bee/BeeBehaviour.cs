@@ -1,12 +1,17 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
-
-public class BeeBehaviour : MonoBehaviour, IKillable
+/// <summary>
+/// Sets the behaviour of the "Bee" enemy
+/// </summary>
+/// <seealso cref="ShootingEnemy"/>
+/// <seealso cref="IKillable"/>
+public class BeeBehaviour : ShootingEnemy, IKillable
 {
+    /// <summary>
+    /// Static class containing the name of the animation of the enemy meant to be accessed as an enumerator 
+    /// </summary>
     private static class BeeAnimations
     {
         public static readonly string Idle = "BeeIdle";
@@ -14,40 +19,36 @@ public class BeeBehaviour : MonoBehaviour, IKillable
         public static readonly string Hit = "BeeHit";
     }
     
-    public EnemyProjectileType ProjectileType;
-
-    private Animator _animator;
-    private string _patrolId;
-
-    private float _attackCycleTime = 3f;
-    private float _timeElapsed = 0f;
-    private bool _stopAttacking = false;
     private Collider2D _collider;
-    private Rigidbody2D _rb;
+    private Rigidbody2D _rb; 
+    private Animator _animator;
+    
+    private const float _attackAnimationSynchronizationTime = 0.5f;  
+    private const float _afterAttackAnimationSynchronizationTime = 0.16f;  
+    
+    private string _patrolId;
+    
+    /// <summary>
+    /// Stores the logic whether the enemy has been hit by the player or not
+    /// </summary>
+    private bool _hit = false;
+    
 
-
-    private void Start()
+    private new void Start()
     {
-        _animator = GetComponent<Animator>();
-        _patrolId = GetComponent<EnemyBasicPatrolling>().patrolId;
-
-        //I get all the possible colliders that the enemy has
+        base.Start();
         _collider = GetComponent<Collider2D>();
-
         _rb = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+        
+        _patrolId = GetComponent<EnemyBasicPatrolling>().patrolId;
     }
 
-    private void Update()
+    private new void Update()
     {
-        if (_stopAttacking)
-            return;
-        if (_timeElapsed > _attackCycleTime)
-        {
-            StartCoroutine(AttackBehaviour());
-            _timeElapsed = 0f;
-        }
-
-        _timeElapsed += Time.deltaTime;
+        if (_hit) return;
+        
+        base.Update();
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -56,23 +57,33 @@ public class BeeBehaviour : MonoBehaviour, IKillable
         killableComponent?.Kill(gameObject);
     }
 
-    private IEnumerator AttackBehaviour()
+
+    protected override IEnumerator AttackBehaviour()
     {
         _animator.Play(BeeAnimations.Attack);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(_attackAnimationSynchronizationTime);
+        
         //In case the bee gets hit while mid animation, we need to cancel this logic
-        if (!_stopAttacking)
-        {
-            GameObject projectile = EnemyProjectilePool.I.GetProjectile(ProjectileType);
-            projectile.transform.position = new Vector2(transform.position.x, transform.position.y - 0.5f);
-            AudioManager.Instance.Play(gameObject,SoundList.EnemyShootProjectile);
-            yield return new WaitForSeconds(0.16f);
-            _animator.Play(BeeAnimations.Idle);
-        }
+        if (_hit) yield break; 
+        
+        //The bee moves along the level, so the offset position must be calculated everytime it fires
+        projectileOffsetShootingPosition = new Vector2(transform.position.x, transform.position.y - 0.5f); 
+        Shoot(projectileOffsetShootingPosition);
+        
+        //AudioManager.Instance.Play(gameObject,SoundList.EnemyShootProjectile);
+        
+        yield return new WaitForSeconds(_afterAttackAnimationSynchronizationTime);
+        _animator.Play(BeeAnimations.Idle);
     }
 
+    /// <summary>
+    /// Behavior of the enemy when it is killed
+    /// </summary>
+    /// <param name="other">The GameObject that killed this enemy</param>
+    /// <returns>Wait times</returns>
     private IEnumerator OnKill(GameObject other)
     {
+        _hit = true;
         //Stop patrolling
         DOTween.Pause(_patrolId);
 
@@ -87,9 +98,12 @@ public class BeeBehaviour : MonoBehaviour, IKillable
         Destroy(gameObject);
     }
 
+    /// <summary>
+    /// Adds a force to the enemy when it is killed 
+    /// </summary>
+    /// <param name="other"> The GameObject that killed this enemy </param>
     private void LaunchEnemy(GameObject other)
     {
-        //It must have a collider because for the time being it should only be collided by the player 
         Rigidbody2D otherRb = other.GetComponent<Rigidbody2D>();
         int launchDirection = otherRb.velocity.x > 0 ? 1 : -1;
 
