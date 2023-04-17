@@ -105,6 +105,9 @@ $(document).ready(function(){initNavTree('class_ads_manager.html',''); initResiz
   <div class="headertitle"><div class="title">AdsManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Handles the logic behind playing interstitial ads inside the application.  
+ <a href="class_ads_manager.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for AdsManager:</div>
 <div class="dyncontent">
@@ -115,17 +118,23 @@ Inheritance diagram for AdsManager:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3292b7d3cc3f0a016cc95443551829e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ads_manager.html#a3292b7d3cc3f0a016cc95443551829e0">PlayAd</a> (Action adEndAction)</td></tr>
+<tr class="memdesc:a3292b7d3cc3f0a016cc95443551829e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays an ad of the proper type depending on the device and executes an action after is it completed.  <br /></td></tr>
 <tr class="separator:a3292b7d3cc3f0a016cc95443551829e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c985a55e7e86246eb9193cb72f6cf91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ads_manager.html#a1c985a55e7e86246eb9193cb72f6cf91">OnUnityAdsReady</a> (string placementId)</td></tr>
 <tr class="separator:a1c985a55e7e86246eb9193cb72f6cf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9f93ad9a424098972bf611d2def4002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ads_manager.html#aa9f93ad9a424098972bf611d2def4002">OnUnityAdsDidError</a> (string message)</td></tr>
+<tr class="memdesc:aa9f93ad9a424098972bf611d2def4002"><td class="mdescLeft">&#160;</td><td class="mdescRight">This logic is executed when the ad gets an error and it executes the logic to be expected when an ad is finished playing.  <br /></td></tr>
 <tr class="separator:aa9f93ad9a424098972bf611d2def4002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabd4b4059485ca6a02f1be35a62f9cc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ads_manager.html#aabd4b4059485ca6a02f1be35a62f9cc5">OnUnityAdsDidStart</a> (string placementId)</td></tr>
+<tr class="memdesc:aabd4b4059485ca6a02f1be35a62f9cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This logic is played when the ad starts playing an it sets the timescale to 0 so the game is "paused" while the ad is playing.  <br /></td></tr>
 <tr class="separator:aabd4b4059485ca6a02f1be35a62f9cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21b9570a1696d968ce607ce99a6f5dc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ads_manager.html#a21b9570a1696d968ce607ce99a6f5dc1">OnUnityAdsDidFinish</a> (string placementId, ShowResult showResult)</td></tr>
+<tr class="memdesc:a21b9570a1696d968ce607ce99a6f5dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the ad is finished playing it executes the logic of the action set when the ad was played.  <br /></td></tr>
 <tr class="separator:a21b9570a1696d968ce607ce99a6f5dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Handles the logic behind playing interstitial ads inside the application. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa9f93ad9a424098972bf611d2def4002" name="aa9f93ad9a424098972bf611d2def4002"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9f93ad9a424098972bf611d2def4002">&#9670;&#160;</a></span>OnUnityAdsDidError()</h2>
 
@@ -149,6 +158,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This logic is executed when the ad gets an error and it executes the logic to be expected when an ad is finished playing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>Error message</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -186,6 +203,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>When the ad is finished playing it executes the logic of the action set when the ad was played. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">placementId</td><td>Placement identifier</td></tr>
+    <tr><td class="paramname">showResult</td><td>Result of the ad</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aabd4b4059485ca6a02f1be35a62f9cc5" name="aabd4b4059485ca6a02f1be35a62f9cc5"></a>
@@ -211,6 +237,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This logic is played when the ad starts playing an it sets the timescale to 0 so the game is "paused" while the ad is playing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">placementId</td><td>Optional placement</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -263,6 +297,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Plays an ad of the proper type depending on the device and executes an action after is it completed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adEndAction</td><td>An action to be executed when the ad is finished</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

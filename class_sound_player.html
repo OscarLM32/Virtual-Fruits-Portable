@@ -106,6 +106,9 @@ $(document).ready(function(){initNavTree('class_sound_player.html',''); initResi
   <div class="headertitle"><div class="title">SoundPlayer Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Handles the logic behind setting up the audio sources and playing the audios tracks of any GameObject.  
+ <a href="class_sound_player.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for SoundPlayer:</div>
 <div class="dyncontent">
@@ -116,16 +119,22 @@ Inheritance diagram for SoundPlayer:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a821638f8dadb799ae1b3ef15aa3a98a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_player.html#a821638f8dadb799ae1b3ef15aa3a98a7">Play</a> (string clipName)</td></tr>
+<tr class="memdesc:a821638f8dadb799ae1b3ef15aa3a98a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the sound with the name specified in the.  <br /></td></tr>
 <tr class="separator:a821638f8dadb799ae1b3ef15aa3a98a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc692305aa5fca84fa9f0752421d39f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_player.html#adc692305aa5fca84fa9f0752421d39f3">PlayDisposableAtPosition</a> (string clipName, Vector3 position)</td></tr>
+<tr class="memdesc:adc692305aa5fca84fa9f0752421d39f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a disposable sound (destroyed after playing) at a certain position specified.  <br /></td></tr>
 <tr class="separator:adc692305aa5fca84fa9f0752421d39f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a1541d3c0721372796dd8ad0fd47e79a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sound_list.html">SoundList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_player.html#a1541d3c0721372796dd8ad0fd47e79a0">soundList</a></td></tr>
+<tr class="memdesc:a1541d3c0721372796dd8ad0fd47e79a0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_sound_list.html" title="An ScriptableObject containing a list of sounds from the class Sound.">SoundList</a></dd></dl>
+ <br /></td></tr>
 <tr class="separator:a1541d3c0721372796dd8ad0fd47e79a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Handles the logic behind setting up the audio sources and playing the audios tracks of any GameObject. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a821638f8dadb799ae1b3ef15aa3a98a7" name="a821638f8dadb799ae1b3ef15aa3a98a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a821638f8dadb799ae1b3ef15aa3a98a7">&#9670;&#160;</a></span>Play()</h2>
 
@@ -149,6 +158,15 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Plays the sound with the name specified in the. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clipName</td><td>The name of the <a class="el" href="class_sound.html" title="Class representing a sound effect or soundtrack to be played.">Sound</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_sound.html" title="Class representing a sound effect or soundtrack to be played.">Sound</a></dd></dl>
 
 </div>
 </div>
@@ -186,6 +204,16 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Plays a disposable sound (destroyed after playing) at a certain position specified. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clipName</td><td>The name of the <a class="el" href="class_sound.html" title="Class representing a sound effect or soundtrack to be played.">Sound</a></td></tr>
+    <tr><td class="paramname">position</td><td>The position where to spawn the audio source</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_sound.html" title="Class representing a sound effect or soundtrack to be played.">Sound</a></dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -200,6 +228,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_sound_list.html" title="An ScriptableObject containing a list of sounds from the class Sound.">SoundList</a></dd></dl>
+</p>
 
 </div>
 </div>
