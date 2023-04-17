@@ -8,6 +8,7 @@ In this version, the players must face a single long level with different enemie
 hazards and items in order to get the best score to position themselves on top of the ladder.
 
 Now check the documentation generated with Doxygen and [doxygen-awesome-css](https://jothepro.github.io/doxygen-awesome-css/) [here!](https://oscarlm32.github.io/Virtual-Fruits-Portable/annotated.html).
+
 ---
 
 ## Implementation summary
