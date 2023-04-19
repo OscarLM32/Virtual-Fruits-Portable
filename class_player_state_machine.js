@@ -3,7 +3,7 @@ var class_player_state_machine =
     [ "GroundChecker", "class_player_state_machine.html#ae651fc07d4b7d7deca399e73a4d99051", null ],
     [ "GroundLayer", "class_player_state_machine.html#ae4eb36e9a4ab021e7cd7502c9496f35b", null ],
     [ "Weapon", "class_player_state_machine.html#a03fb4afa5c5335b7620649c9d064b5de", null ],
-    [ "CurrentMovementState", "class_player_state_machine.html#a1807526c1ba5b7694f681b97ca5ada85", null ],
+    [ "CurrentMovementType", "class_player_state_machine.html#a85973fe8403103c376bc4c6a0db45a39", null ],
     [ "CurrentState", "class_player_state_machine.html#af78ba89cb458932308714795085a9229", null ],
     [ "DashGraceTime", "class_player_state_machine.html#af00105f5b70ed0a0275cc61aac5df61f", null ],
     [ "DashingGravityFactor", "class_player_state_machine.html#aead38e146b7ca85936084430a42942fd", null ],

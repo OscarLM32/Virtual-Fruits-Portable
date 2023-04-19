@@ -106,13 +106,16 @@ $(document).ready(function(){initNavTree('class_player_jumping_state.html',''); 
   <div class="headertitle"><div class="title">PlayerJumpingState Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>State that handles the logic of the player when it is jumping.  
+ <a href="class_player_jumping_state.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for PlayerJumpingState:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_player_jumping_state.png" usemap="#PlayerJumpingState_map" alt=""/>
   <map id="PlayerJumpingState_map" name="PlayerJumpingState_map">
-<area href="class_player_base_state.html" alt="PlayerBaseState" shape="rect" coords="0,0,124,24"/>
+<area href="class_player_base_state.html" title="Abstract class defining the basic behaviour of any state part of the PlayerStateMachine." alt="PlayerBaseState" shape="rect" coords="0,0,124,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -121,28 +124,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e678566d889bfd6964ed420b6dc9d47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_jumping_state.html#a0e678566d889bfd6964ed420b6dc9d47">PlayerJumpingState</a> (<a class="el" href="class_player_state_machine.html">PlayerStateMachine</a> currentContext, <a class="el" href="class_player_state_factory.html">PlayerStateFactory</a> playerStateFactory)</td></tr>
 <tr class="separator:a0e678566d889bfd6964ed420b6dc9d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af411ff02a45f1ede54104596113960cf"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_jumping_state.html#af411ff02a45f1ede54104596113960cf">EnterState</a> ()</td></tr>
+<tr class="memdesc:af411ff02a45f1ede54104596113960cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enter state is called once when the state is first accessed.  <br /></td></tr>
 <tr class="separator:af411ff02a45f1ede54104596113960cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70c3add0a46db8da9473cbe6fbb0ab3c"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_jumping_state.html#a70c3add0a46db8da9473cbe6fbb0ab3c">UpdateState</a> ()</td></tr>
+<tr class="memdesc:a70c3add0a46db8da9473cbe6fbb0ab3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update state is called once per frame while the state is active.  <br /></td></tr>
 <tr class="separator:a70c3add0a46db8da9473cbe6fbb0ab3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab670a23ea7a6801dee230869a2516670"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_jumping_state.html#ab670a23ea7a6801dee230869a2516670">ExitState</a> ()</td></tr>
+<tr class="memdesc:ab670a23ea7a6801dee230869a2516670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit state is called once when the state is going to be switched.  <br /></td></tr>
 <tr class="separator:ab670a23ea7a6801dee230869a2516670"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac63c9f14d09f70477170b271e125b6f1"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_jumping_state.html#ac63c9f14d09f70477170b271e125b6f1">CheckSwitchStates</a> ()</td></tr>
+<tr class="memdesc:ac63c9f14d09f70477170b271e125b6f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the states should be switched and in that case it switches them.  <br /></td></tr>
 <tr class="separator:ac63c9f14d09f70477170b271e125b6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb91951e17811d2a6684b77498aafed4"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_jumping_state.html#adb91951e17811d2a6684b77498aafed4">HandleGravity</a> ()</td></tr>
+<tr class="memdesc:adb91951e17811d2a6684b77498aafed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the gravity by the specifics of the state.  <br /></td></tr>
 <tr class="separator:adb91951e17811d2a6684b77498aafed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52579e7456a6566a31f16d76849a28e6"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_jumping_state.html#a52579e7456a6566a31f16d76849a28e6">HandleAnimation</a> ()</td></tr>
+<tr class="memdesc:a52579e7456a6566a31f16d76849a28e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the animations of the state.  <br /></td></tr>
 <tr class="separator:a52579e7456a6566a31f16d76849a28e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24267cf1056b4efecdcd65c1c4588e69"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_base_state.html#a24267cf1056b4efecdcd65c1c4588e69">EnterState</a> ()</td></tr>
+<tr class="memdesc:a24267cf1056b4efecdcd65c1c4588e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enter state is called once when the state is first accessed.  <br /></td></tr>
 <tr class="separator:a24267cf1056b4efecdcd65c1c4588e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad258f2886473dc07441dd0efd3fc1ad0"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_base_state.html#ad258f2886473dc07441dd0efd3fc1ad0">UpdateState</a> ()</td></tr>
+<tr class="memdesc:ad258f2886473dc07441dd0efd3fc1ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update state is called once per frame while the state is active.  <br /></td></tr>
 <tr class="separator:ad258f2886473dc07441dd0efd3fc1ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65a04b56cdc784eabfc784fd9b5cb881"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_base_state.html#a65a04b56cdc784eabfc784fd9b5cb881">ExitState</a> ()</td></tr>
+<tr class="memdesc:a65a04b56cdc784eabfc784fd9b5cb881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit state is called once when the state is going to be switched.  <br /></td></tr>
 <tr class="separator:a65a04b56cdc784eabfc784fd9b5cb881"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad557eef3590e0d82dd64a907d1a544b8"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_base_state.html#ad557eef3590e0d82dd64a907d1a544b8">CheckSwitchStates</a> ()</td></tr>
+<tr class="memdesc:ad557eef3590e0d82dd64a907d1a544b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the states should be switched and in that case it switches them.  <br /></td></tr>
 <tr class="separator:ad557eef3590e0d82dd64a907d1a544b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a897c7c247658e249e1686ca93768cb56"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_base_state.html#a897c7c247658e249e1686ca93768cb56">HandleGravity</a> ()</td></tr>
+<tr class="memdesc:a897c7c247658e249e1686ca93768cb56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the gravity by the specifics of the state.  <br /></td></tr>
 <tr class="separator:a897c7c247658e249e1686ca93768cb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae417748ef2bf863092696d9cd422052f"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_base_state.html#ae417748ef2bf863092696d9cd422052f">HandleAnimation</a> ()</td></tr>
+<tr class="memdesc:ae417748ef2bf863092696d9cd422052f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the animations of the state.  <br /></td></tr>
 <tr class="separator:ae417748ef2bf863092696d9cd422052f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -151,14 +166,19 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a4bf0189b187cdf2cf180094d71ddb215 inherit pro_methods_class_player_base_state"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_base_state.html#a4bf0189b187cdf2cf180094d71ddb215">PlayerBaseState</a> (<a class="el" href="class_player_state_machine.html">PlayerStateMachine</a> currentContext, <a class="el" href="class_player_state_factory.html">PlayerStateFactory</a> playerStateFactory)</td></tr>
 <tr class="separator:a4bf0189b187cdf2cf180094d71ddb215 inherit pro_methods_class_player_base_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1e5506d31ad29b3da4a689dcce08fc9 inherit pro_methods_class_player_base_state"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_base_state.html#ac1e5506d31ad29b3da4a689dcce08fc9">SwitchState</a> (<a class="el" href="class_player_base_state.html">PlayerBaseState</a> newState)</td></tr>
+<tr class="memdesc:ac1e5506d31ad29b3da4a689dcce08fc9 inherit pro_methods_class_player_base_state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches the current state with a new state.  <br /></td></tr>
 <tr class="separator:ac1e5506d31ad29b3da4a689dcce08fc9 inherit pro_methods_class_player_base_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_player_base_state"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_player_base_state')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_player_base_state.html">PlayerBaseState</a></td></tr>
 <tr class="memitem:a221e68e78657fa194a37f3ef50bf907a inherit pro_attribs_class_player_base_state"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player_state_machine.html">PlayerStateMachine</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_base_state.html#a221e68e78657fa194a37f3ef50bf907a">Context</a></td></tr>
+<tr class="memdesc:a221e68e78657fa194a37f3ef50bf907a inherit pro_attribs_class_player_base_state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updated context of the state of the whole state machine.  <br /></td></tr>
 <tr class="separator:a221e68e78657fa194a37f3ef50bf907a inherit pro_attribs_class_player_base_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5de49c3d7425938edd0c25d88cf36aab inherit pro_attribs_class_player_base_state"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player_state_factory.html">PlayerStateFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_base_state.html#a5de49c3d7425938edd0c25d88cf36aab">Factory</a></td></tr>
+<tr class="memdesc:a5de49c3d7425938edd0c25d88cf36aab inherit pro_attribs_class_player_base_state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the factory of the states in the state machine.  <br /></td></tr>
 <tr class="separator:a5de49c3d7425938edd0c25d88cf36aab inherit pro_attribs_class_player_base_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>State that handles the logic of the player when it is jumping. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0e678566d889bfd6964ed420b6dc9d47" name="a0e678566d889bfd6964ed420b6dc9d47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e678566d889bfd6964ed420b6dc9d47">&#9670;&#160;</a></span>PlayerJumpingState()</h2>
 
@@ -219,6 +239,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Checks if the states should be switched and in that case it switches them. </p>
+
 <p>Implements <a class="el" href="class_player_base_state.html#ad557eef3590e0d82dd64a907d1a544b8">PlayerBaseState</a>.</p>
 
 </div>
@@ -245,6 +267,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Enter state is called once when the state is first accessed. </p>
 
 <p>Implements <a class="el" href="class_player_base_state.html#a24267cf1056b4efecdcd65c1c4588e69">PlayerBaseState</a>.</p>
 
@@ -273,6 +297,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Exit state is called once when the state is going to be switched. </p>
+
 <p>Implements <a class="el" href="class_player_base_state.html#a65a04b56cdc784eabfc784fd9b5cb881">PlayerBaseState</a>.</p>
 
 </div>
@@ -299,6 +325,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Handles the animations of the state. </p>
 
 <p>Implements <a class="el" href="class_player_base_state.html#ae417748ef2bf863092696d9cd422052f">PlayerBaseState</a>.</p>
 
@@ -327,6 +355,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handles the gravity by the specifics of the state. </p>
+
 <p>Implements <a class="el" href="class_player_base_state.html#a897c7c247658e249e1686ca93768cb56">PlayerBaseState</a>.</p>
 
 </div>
@@ -354,12 +384,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Update state is called once per frame while the state is active. </p>
+<p>I could be called more than once if the method is called in FixedUpdate instead of Update in <a class="el" href="class_player_state_machine.html" title="State machine of the player that handles all the logic behind the character&#39;s movement.">PlayerStateMachine</a></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_player_state_machine.html" title="State machine of the player that handles all the logic behind the character&#39;s movement.">PlayerStateMachine</a></dd></dl>
+
 <p>Implements <a class="el" href="class_player_base_state.html#ad258f2886473dc07441dd0efd3fc1ad0">PlayerBaseState</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/oscar/OneDrive/Documentos/Unity Projects/Virtual Fruits Portable/Assets/Scripts/Player/StateMachine/States/<a class="el" href="_player_jumping_state_8cs.html">PlayerJumpingState.cs</a></li>
+<li>Scripts/Player/StateMachine/States/<a class="el" href="_player_jumping_state_8cs.html">PlayerJumpingState.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

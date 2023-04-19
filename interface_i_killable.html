@@ -105,6 +105,9 @@ $(document).ready(function(){initNavTree('interface_i_killable.html',''); initRe
   <div class="headertitle"><div class="title">IKillable Interface Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface to be implemented for each element in the game that can be killed.  
+ <a href="interface_i_killable.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for IKillable:</div>
 <div class="dyncontent">
@@ -113,9 +116,9 @@ Inheritance diagram for IKillable:</div>
   <map id="IKillable_map" name="IKillable_map">
 <area href="class_bee_behaviour.html" title="Sets the behaviour of the &quot;Bee&quot; enemy." alt="BeeBehaviour" shape="rect" coords="0,56,148,80"/>
 <area href="class_bunny_behaviour.html" title="Behaviour of the &quot;Bunny&quot; enemy." alt="BunnyBehaviour" shape="rect" coords="158,56,306,80"/>
-<area href="class_plant_behaviour.html" alt="PlantBehaviour" shape="rect" coords="316,56,464,80"/>
-<area href="class_player_collision_manager.html" alt="PlayerCollisionManager" shape="rect" coords="474,56,622,80"/>
-<area href="class_trunk.html" title="Class handling the behaviour of the Trunk enemy." alt="Trunk" shape="rect" coords="632,56,780,80"/>
+<area href="class_plant_behaviour.html" title="Sets the behaviour of the &quot;Plant&quot; enemy." alt="PlantBehaviour" shape="rect" coords="316,56,464,80"/>
+<area href="class_player_collision_manager.html" title="Handles the behaviour of the character when it is hit by an enemy or collides against an environmenta..." alt="PlayerCollisionManager" shape="rect" coords="474,56,622,80"/>
+<area href="class_trunk_behaviour.html" title="Class handling the behaviour of the Trunk enemy." alt="TrunkBehaviour" shape="rect" coords="632,56,780,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -124,7 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa3dff8037aabd871609e3e22e2e87569"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_killable.html#aa3dff8037aabd871609e3e22e2e87569">Kill</a> (GameObject other)</td></tr>
 <tr class="separator:aa3dff8037aabd871609e3e22e2e87569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface to be implemented for each element in the game that can be killed. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa3dff8037aabd871609e3e22e2e87569" name="aa3dff8037aabd871609e3e22e2e87569"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3dff8037aabd871609e3e22e2e87569">&#9670;&#160;</a></span>Kill()</h2>
 
@@ -141,12 +146,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_bee_behaviour.html#ab374a6194bc24ecda4e32028a9d81dc0">BeeBehaviour</a>, <a class="el" href="class_bunny_behaviour.html#ac8cd286a9640711590ee78887805dc8e">BunnyBehaviour</a>, <a class="el" href="class_plant_behaviour.html#ac3cc2e983e31283fcde9035ef67365db">PlantBehaviour</a>, <a class="el" href="class_trunk.html#a319e2e7001cf33787be141525f90880d">Trunk</a>, and <a class="el" href="class_player_collision_manager.html#a4a1e84b340342f96e908a4557c0b4151">PlayerCollisionManager</a>.</p>
+<p>Implemented in <a class="el" href="class_bee_behaviour.html#ab374a6194bc24ecda4e32028a9d81dc0">BeeBehaviour</a>, <a class="el" href="class_bunny_behaviour.html#ac8cd286a9640711590ee78887805dc8e">BunnyBehaviour</a>, <a class="el" href="class_plant_behaviour.html#ac3cc2e983e31283fcde9035ef67365db">PlantBehaviour</a>, <a class="el" href="class_trunk_behaviour.html#a3df9c7a35ea2e227a0e925e56b006ef6">TrunkBehaviour</a>, and <a class="el" href="class_player_collision_manager.html#a4a1e84b340342f96e908a4557c0b4151">PlayerCollisionManager</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>C:/Users/oscar/OneDrive/Documentos/Unity Projects/Virtual Fruits Portable/Assets/Scripts/<a class="el" href="_i_killable_8cs.html">IKillable.cs</a></li>
+<li>Scripts/<a class="el" href="_i_killable_8cs.html">IKillable.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

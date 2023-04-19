@@ -106,19 +106,23 @@ $(document).ready(function(){initNavTree('class_player_collision_manager.html','
   <div class="headertitle"><div class="title">PlayerCollisionManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Handles the behaviour of the character when it is hit by an enemy or collides against an environmental hazard.  
+ <a href="class_player_collision_manager.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for PlayerCollisionManager:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_player_collision_manager.png" usemap="#PlayerCollisionManager_map" alt=""/>
   <map id="PlayerCollisionManager_map" name="PlayerCollisionManager_map">
-<area href="interface_i_killable.html" alt="IKillable" shape="rect" coords="158,0,306,24"/>
+<area href="interface_i_killable.html" title="Interface to be implemented for each element in the game that can be killed." alt="IKillable" shape="rect" coords="158,0,306,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a43751d2b2a1ffddd5a2443e53d877958"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_collision_manager.html#a43751d2b2a1ffddd5a2443e53d877958">BounceBack</a> (GameObject other)</td></tr>
+<tr class="memdesc:a43751d2b2a1ffddd5a2443e53d877958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the character bounce back losing the control over the character.  <br /></td></tr>
 <tr class="separator:a43751d2b2a1ffddd5a2443e53d877958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a1e84b340342f96e908a4557c0b4151"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_collision_manager.html#a4a1e84b340342f96e908a4557c0b4151">Kill</a> (GameObject other)</td></tr>
 <tr class="separator:a4a1e84b340342f96e908a4557c0b4151"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,9 +134,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ac3aa3d33d189a1e1ab63fdb169bc48a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player_state_machine.html">PlayerStateMachine</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_collision_manager.html#ac3aa3d33d189a1e1ab63fdb169bc48a7">PlayerController</a></td></tr>
 <tr class="separator:ac3aa3d33d189a1e1ab63fdb169bc48a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a585a789f9822b739d5544865089a8638"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_collision_manager.html#a585a789f9822b739d5544865089a8638">LayersToIgnoreOnCollision</a></td></tr>
+<tr class="memdesc:a585a789f9822b739d5544865089a8638"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of layers that need to be ignored after being hit.  <br /></td></tr>
 <tr class="separator:a585a789f9822b739d5544865089a8638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Handles the behaviour of the character when it is hit by an enemy or collides against an environmental hazard. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a43751d2b2a1ffddd5a2443e53d877958" name="a43751d2b2a1ffddd5a2443e53d877958"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a43751d2b2a1ffddd5a2443e53d877958">&#9670;&#160;</a></span>BounceBack()</h2>
 
@@ -156,6 +163,15 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Makes the character bounce back losing the control over the character. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The GameObject the character has collided with</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -200,6 +216,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>A list of layers that need to be ignored after being hit. </p>
+
 </div>
 </div>
 <a id="ac3aa3d33d189a1e1ab63fdb169bc48a7" name="ac3aa3d33d189a1e1ab63fdb169bc48a7"></a>
@@ -217,7 +235,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/oscar/OneDrive/Documentos/Unity Projects/Virtual Fruits Portable/Assets/Scripts/Player/<a class="el" href="_player_collision_manager_8cs.html">PlayerCollisionManager.cs</a></li>
+<li>Scripts/Player/<a class="el" href="_player_collision_manager_8cs.html">PlayerCollisionManager.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -106,6 +106,9 @@ $(document).ready(function(){initNavTree('class_player_state_machine.html',''); 
   <div class="headertitle"><div class="title">PlayerStateMachine Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>State machine of the player that handles all the logic behind the character's movement.  
+ <a href="class_player_state_machine.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for PlayerStateMachine:</div>
 <div class="dyncontent">
@@ -118,8 +121,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae4eb36e9a4ab021e7cd7502c9496f35b"><td class="memItemLeft" align="right" valign="top">LayerMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_state_machine.html#ae4eb36e9a4ab021e7cd7502c9496f35b">GroundLayer</a></td></tr>
 <tr class="separator:ae4eb36e9a4ab021e7cd7502c9496f35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae651fc07d4b7d7deca399e73a4d99051"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_state_machine.html#ae651fc07d4b7d7deca399e73a4d99051">GroundChecker</a></td></tr>
+<tr class="memdesc:ae651fc07d4b7d7deca399e73a4d99051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checker for ground collision.  <br /></td></tr>
 <tr class="separator:ae651fc07d4b7d7deca399e73a4d99051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03fb4afa5c5335b7620649c9d064b5de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player_weapon.html">PlayerWeapon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_state_machine.html#a03fb4afa5c5335b7620649c9d064b5de">Weapon</a></td></tr>
+<tr class="memdesc:a03fb4afa5c5335b7620649c9d064b5de"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference to the weapon the character uses.  <br /></td></tr>
 <tr class="separator:a03fb4afa5c5335b7620649c9d064b5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
@@ -136,8 +141,8 @@ Properties</h2></td></tr>
 <tr class="separator:a78ec8e26b7b3cfd77e3743f9e17be379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41115f5cea9d02926ee2794a6993a3f8"><td class="memItemLeft" align="right" valign="top">Animator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_state_machine.html#a41115f5cea9d02926ee2794a6993a3f8">PlayerAnimator</a><code> [get]</code></td></tr>
 <tr class="separator:a41115f5cea9d02926ee2794a6993a3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1807526c1ba5b7694f681b97ca5ada85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_player_movement_state_8cs.html#a9d2791ffd502d31fc09f3ac7b6b58da3">PlayerMovementState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_state_machine.html#a1807526c1ba5b7694f681b97ca5ada85">CurrentMovementState</a><code> [get]</code></td></tr>
-<tr class="separator:a1807526c1ba5b7694f681b97ca5ada85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85973fe8403103c376bc4c6a0db45a39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_player_state_machine_8cs.html#a7cf3ef458239d83cc218960ce090ac91">PlayerMovementType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_state_machine.html#a85973fe8403103c376bc4c6a0db45a39">CurrentMovementType</a><code> [get]</code></td></tr>
+<tr class="separator:a85973fe8403103c376bc4c6a0db45a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03193fd3d6abef33a4931bb46756e4e8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_state_machine.html#a03193fd3d6abef33a4931bb46756e4e8">JumpGraceTime</a><code> [get]</code></td></tr>
 <tr class="separator:a03193fd3d6abef33a4931bb46756e4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace1177d76d57b58b51378dd034f29870"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_state_machine.html#ace1177d76d57b58b51378dd034f29870">InitialJumpVelocity</a><code> [get]</code></td></tr>
@@ -161,7 +166,9 @@ Properties</h2></td></tr>
 <tr class="memitem:ab1d0d0e6ffe71e8b13214935fdb6db2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_state_machine.html#ab1d0d0e6ffe71e8b13214935fdb6db2b">IsGrounded</a><code> [get]</code></td></tr>
 <tr class="separator:ab1d0d0e6ffe71e8b13214935fdb6db2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>State machine of the player that handles all the logic behind the character's movement. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="ae651fc07d4b7d7deca399e73a4d99051" name="ae651fc07d4b7d7deca399e73a4d99051"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae651fc07d4b7d7deca399e73a4d99051">&#9670;&#160;</a></span>GroundChecker</h2>
 
@@ -173,6 +180,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Checker for ground collision. </p>
 
 </div>
 </div>
@@ -202,11 +211,13 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>A reference to the weapon the character uses. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a id="a1807526c1ba5b7694f681b97ca5ada85" name="a1807526c1ba5b7694f681b97ca5ada85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1807526c1ba5b7694f681b97ca5ada85">&#9670;&#160;</a></span>CurrentMovementState</h2>
+<a id="a85973fe8403103c376bc4c6a0db45a39" name="a85973fe8403103c376bc4c6a0db45a39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85973fe8403103c376bc4c6a0db45a39">&#9670;&#160;</a></span>CurrentMovementType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -215,7 +226,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_player_movement_state_8cs.html#a9d2791ffd502d31fc09f3ac7b6b58da3">PlayerMovementState</a> PlayerStateMachine.CurrentMovementState</td>
+          <td class="memname"><a class="el" href="_player_state_machine_8cs.html#a7cf3ef458239d83cc218960ce090ac91">PlayerMovementType</a> PlayerStateMachine.CurrentMovementType</td>
         </tr>
       </table>
   </td>
@@ -602,7 +613,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/oscar/OneDrive/Documentos/Unity Projects/Virtual Fruits Portable/Assets/Scripts/Player/StateMachine/<a class="el" href="_player_state_machine_8cs.html">PlayerStateMachine.cs</a></li>
+<li>Scripts/Player/StateMachine/<a class="el" href="_player_state_machine_8cs.html">PlayerStateMachine.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

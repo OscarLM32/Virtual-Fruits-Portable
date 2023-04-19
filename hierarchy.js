@@ -6,7 +6,7 @@ var hierarchy =
       [ "BunnyBehaviour", "class_bunny_behaviour.html", null ],
       [ "PlantBehaviour", "class_plant_behaviour.html", null ],
       [ "PlayerCollisionManager", "class_player_collision_manager.html", null ],
-      [ "Trunk", "class_trunk.html", null ]
+      [ "TrunkBehaviour", "class_trunk_behaviour.html", null ]
     ] ],
     [ "ISerializationCallbackReceiver", null, [
       [ "EnemyProjectilePool", "class_enemy_projectile_pool.html", null ]
@@ -36,7 +36,7 @@ var hierarchy =
       [ "ShootingEnemy", "class_shooting_enemy.html", [
         [ "BeeBehaviour", "class_bee_behaviour.html", null ],
         [ "PlantBehaviour", "class_plant_behaviour.html", null ],
-        [ "Trunk", "class_trunk.html", null ]
+        [ "TrunkBehaviour", "class_trunk_behaviour.html", null ]
       ] ],
       [ "SnailInShell", "class_snail_in_shell.html", null ],
       [ "SnailOutShell", "class_snail_out_shell.html", null ],

@@ -37,5 +37,5 @@ var annotated_dup =
     [ "SoundPlayer", "class_sound_player.html", "class_sound_player" ],
     [ "StaticEnvironmentalHazard", "class_static_environmental_hazard.html", null ],
     [ "Timer", "class_timer.html", "class_timer" ],
-    [ "Trunk", "class_trunk.html", "class_trunk" ]
+    [ "TrunkBehaviour", "class_trunk_behaviour.html", "class_trunk_behaviour" ]
 ];

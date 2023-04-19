@@ -106,6 +106,9 @@ $(document).ready(function(){initNavTree('class_parallax_layer.html',''); initRe
   <div class="headertitle"><div class="title">ParallaxLayer Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Handles the internal logic of each layer in the background.  
+ <a href="class_parallax_layer.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ParallaxLayer:</div>
 <div class="dyncontent">
@@ -116,20 +119,25 @@ Inheritance diagram for ParallaxLayer:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acc774bde6a2056c3b80ee981e1a6fe2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parallax_layer.html#acc774bde6a2056c3b80ee981e1a6fe2b">Move</a> (float deltaX, float deltaY)</td></tr>
+<tr class="memdesc:acc774bde6a2056c3b80ee981e1a6fe2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the layer is concordance with the parallax factors and repositions the layer when necessary.  <br /></td></tr>
 <tr class="separator:acc774bde6a2056c3b80ee981e1a6fe2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d813b5c8cbac8d7f3eac2d34056d8e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parallax_layer.html#a6d813b5c8cbac8d7f3eac2d34056d8e8">SwitchLayerSprite</a> (<a class="el" href="_parallax_background_8cs.html#acce821ae55e949f9cddd53492057cc40">BackgroundThemes</a> theme)</td></tr>
+<tr class="memdesc:a6d813b5c8cbac8d7f3eac2d34056d8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches the layer's sprites with the requested theme.  <br /></td></tr>
 <tr class="separator:a6d813b5c8cbac8d7f3eac2d34056d8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a09859f59fa76506ed283fe53bf0637f2"><td class="memItemLeft" align="right" valign="top">List&lt; Sprite &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parallax_layer.html#a09859f59fa76506ed283fe53bf0637f2">Images</a> = new List&lt;Sprite&gt;()</td></tr>
+<tr class="memdesc:a09859f59fa76506ed283fe53bf0637f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">List with the different sprites for each theme in this background layer.  <br /></td></tr>
 <tr class="separator:a09859f59fa76506ed283fe53bf0637f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d20d94901ef9a564e16e8da8d665300"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parallax_layer.html#a0d20d94901ef9a564e16e8da8d665300">ParallaxFactorX</a></td></tr>
 <tr class="separator:a0d20d94901ef9a564e16e8da8d665300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0599d2aa00c39fa4f4e9d8e22aa3f79"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parallax_layer.html#af0599d2aa00c39fa4f4e9d8e22aa3f79">ParallaxFactorY</a></td></tr>
 <tr class="separator:af0599d2aa00c39fa4f4e9d8e22aa3f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Handles the internal logic of each layer in the background. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acc774bde6a2056c3b80ee981e1a6fe2b" name="acc774bde6a2056c3b80ee981e1a6fe2b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc774bde6a2056c3b80ee981e1a6fe2b">&#9670;&#160;</a></span>Move()</h2>
 
@@ -164,6 +172,15 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Moves the layer is concordance with the parallax factors and repositions the layer when necessary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaX</td><td>The distance to travel in the x axis</td></tr>
+    <tr><td class="paramname">deltaY</td><td>The distance to travel in the y axis</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a6d813b5c8cbac8d7f3eac2d34056d8e8" name="a6d813b5c8cbac8d7f3eac2d34056d8e8"></a>
@@ -190,6 +207,14 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Switches the layer's sprites with the requested theme. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">theme</td><td>The theme to switch to</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -204,6 +229,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>List with the different sprites for each theme in this background layer. </p>
 
 </div>
 </div>
@@ -236,7 +263,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/oscar/OneDrive/Documentos/Unity Projects/Virtual Fruits Portable/Assets/Scripts/Visual Effects/<a class="el" href="_parallax_layer_8cs.html">ParallaxLayer.cs</a></li>
+<li>Scripts/Visual Effects/<a class="el" href="_parallax_layer_8cs.html">ParallaxLayer.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
