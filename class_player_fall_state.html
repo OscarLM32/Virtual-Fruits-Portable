@@ -112,12 +112,25 @@ $(document).ready(function(){initNavTree('class_player_fall_state.html',''); ini
 <div class="dynheader">
 Inheritance diagram for PlayerFallState:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_player_fall_state.png" usemap="#PlayerFallState_map" alt=""/>
-  <map id="PlayerFallState_map" name="PlayerFallState_map">
-<area href="class_player_base_state.html" title="Abstract class defining the basic behaviour of any state part of the PlayerStateMachine." alt="PlayerBaseState" shape="rect" coords="0,0,105,24"/>
-  </map>
-</div></div>
+<div class="center"><img src="class_player_fall_state__inherit__graph.png" border="0" usemap="#a_player_fall_state_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_player_fall_state_inherit__map" id="a_player_fall_state_inherit__map">
+<area shape="rect" title="State that handles the logic of the player when it is falling." alt="" coords="10,79,121,104"/>
+<area shape="rect" href="class_player_base_state.html" title="Abstract class defining the basic behaviour of any state part of the PlayerStateMachine." alt="" coords="5,5,125,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for PlayerFallState:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_fall_state__coll__graph.png" border="0" usemap="#a_player_fall_state_coll__map" alt="Collaboration graph"/></div>
+<map name="a_player_fall_state_coll__map" id="a_player_fall_state_coll__map">
+<area shape="rect" title="State that handles the logic of the player when it is falling." alt="" coords="101,331,211,356"/>
+<area shape="rect" href="class_player_base_state.html" title="Abstract class defining the basic behaviour of any state part of the PlayerStateMachine." alt="" coords="96,256,216,281"/>
+<area shape="rect" href="class_player_state_machine.html" title="State machine of the player that handles all the logic behind the character&#39;s movement." alt="" coords="5,168,144,193"/>
+<area shape="rect" title=" " alt="" coords="14,5,125,31"/>
+<area shape="rect" href="class_player_weapon.html" title="Controls the behaviour of the weapon the player uses." alt="" coords="91,80,197,105"/>
+<area shape="rect" href="class_player_state_factory.html" title="Factory pattern of the different states in the PlayerStateMachine." alt="" coords="169,168,303,193"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -178,6 +191,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>State that handles the logic of the player when it is falling. </p>
+
+<p class="definition">Definition at line <a class="el" href="_player_fall_state_8cs_source.html#l00006">6</a> of file <a class="el" href="_player_fall_state_8cs_source.html">PlayerFallState.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adcc5b46afd4c92f2a48f5c993797ef5e" name="adcc5b46afd4c92f2a48f5c993797ef5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adcc5b46afd4c92f2a48f5c993797ef5e">&#9670;&#160;</a></span>PlayerFallState()</h2>
@@ -213,6 +228,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_player_fall_state_8cs_source.html#l00018">18</a> of file <a class="el" href="_player_fall_state_8cs_source.html">PlayerFallState.cs</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -243,6 +260,30 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_player_base_state.html#ad557eef3590e0d82dd64a907d1a544b8">PlayerBaseState</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_player_fall_state_8cs_source.html#l00040">40</a> of file <a class="el" href="_player_fall_state_8cs_source.html">PlayerFallState.cs</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_fall_state_a8c149d72bf0c57d3535b0d091f08a8dc_cgraph.png" border="0" usemap="#aclass_player_fall_state_a8c149d72bf0c57d3535b0d091f08a8dc_cgraph" alt=""/></div>
+<map name="aclass_player_fall_state_a8c149d72bf0c57d3535b0d091f08a8dc_cgraph" id="aclass_player_fall_state_a8c149d72bf0c57d3535b0d091f08a8dc_cgraph">
+<area shape="rect" title="Checks if the states should be switched and in that case it switches them." alt="" coords="5,47,196,87"/>
+<area shape="rect" href="class_player_state_factory.html#a4e2ed2f80ebb1caa1b3171a892d43ae1" title=" " alt="" coords="244,5,439,31"/>
+<area shape="rect" href="class_player_base_state.html#ac1e5506d31ad29b3da4a689dcce08fc9" title="Switches the current state with a new state." alt="" coords="244,55,439,80"/>
+<area shape="rect" href="class_player_state_factory.html#a78358203447f8f8f49028ea9b10a198c" title=" " alt="" coords="250,105,433,145"/>
+<area shape="rect" href="class_player_base_state.html#a24267cf1056b4efecdcd65c1c4588e69" title="Enter state is called once when the state is first accessed." alt="" coords="487,31,673,56"/>
+<area shape="rect" href="class_player_base_state.html#a65a04b56cdc784eabfc784fd9b5cb881" title="Exit state is called once when the state is going to be switched." alt="" coords="491,80,669,105"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_fall_state_a8c149d72bf0c57d3535b0d091f08a8dc_icgraph.png" border="0" usemap="#aclass_player_fall_state_a8c149d72bf0c57d3535b0d091f08a8dc_icgraph" alt=""/></div>
+<map name="aclass_player_fall_state_a8c149d72bf0c57d3535b0d091f08a8dc_icgraph" id="aclass_player_fall_state_a8c149d72bf0c57d3535b0d091f08a8dc_icgraph">
+<area shape="rect" title="Checks if the states should be switched and in that case it switches them." alt="" coords="240,5,431,45"/>
+<area shape="rect" href="class_player_fall_state.html#a9079d7b4059d6381bfb1d4e876065c2e" title="Update state is called once per frame while the state is active." alt="" coords="5,13,192,38"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a341ad67b5117b0534d52d634c6211120" name="a341ad67b5117b0534d52d634c6211120"></a>
@@ -271,6 +312,18 @@ Additional Inherited Members</h2></td></tr>
 <p>Enter state is called once when the state is first accessed. </p>
 
 <p>Implements <a class="el" href="class_player_base_state.html#a24267cf1056b4efecdcd65c1c4588e69">PlayerBaseState</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_player_fall_state_8cs_source.html#l00023">23</a> of file <a class="el" href="_player_fall_state_8cs_source.html">PlayerFallState.cs</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_fall_state_a341ad67b5117b0534d52d634c6211120_cgraph.png" border="0" usemap="#aclass_player_fall_state_a341ad67b5117b0534d52d634c6211120_cgraph" alt=""/></div>
+<map name="aclass_player_fall_state_a341ad67b5117b0534d52d634c6211120_cgraph" id="aclass_player_fall_state_a341ad67b5117b0534d52d634c6211120_cgraph">
+<area shape="rect" title="Enter state is called once when the state is first accessed." alt="" coords="5,31,183,56"/>
+<area shape="rect" href="class_player_fall_state.html#aea7e2a52314802dfff6ca4f1b1423294" title="Handles the animations of the state." alt="" coords="231,5,444,31"/>
+<area shape="rect" href="class_player_fall_state.html#ac4ffb4f092f24ef43fe8691836d8479d" title="Handles the gravity by the specifics of the state." alt="" coords="240,55,435,80"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -301,6 +354,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_player_base_state.html#a65a04b56cdc784eabfc784fd9b5cb881">PlayerBaseState</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_player_fall_state_8cs_source.html#l00035">35</a> of file <a class="el" href="_player_fall_state_8cs_source.html">PlayerFallState.cs</a>.</p>
+
 </div>
 </div>
 <a id="aea7e2a52314802dfff6ca4f1b1423294" name="aea7e2a52314802dfff6ca4f1b1423294"></a>
@@ -330,6 +385,17 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_player_base_state.html#ae417748ef2bf863092696d9cd422052f">PlayerBaseState</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_player_fall_state_8cs_source.html#l00061">61</a> of file <a class="el" href="_player_fall_state_8cs_source.html">PlayerFallState.cs</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_fall_state_aea7e2a52314802dfff6ca4f1b1423294_icgraph.png" border="0" usemap="#aclass_player_fall_state_aea7e2a52314802dfff6ca4f1b1423294_icgraph" alt=""/></div>
+<map name="aclass_player_fall_state_aea7e2a52314802dfff6ca4f1b1423294_icgraph" id="aclass_player_fall_state_aea7e2a52314802dfff6ca4f1b1423294_icgraph">
+<area shape="rect" title="Handles the animations of the state." alt="" coords="231,5,444,31"/>
+<area shape="rect" href="class_player_fall_state.html#a341ad67b5117b0534d52d634c6211120" title="Enter state is called once when the state is first accessed." alt="" coords="5,5,183,31"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ac4ffb4f092f24ef43fe8691836d8479d" name="ac4ffb4f092f24ef43fe8691836d8479d"></a>
@@ -358,6 +424,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Handles the gravity by the specifics of the state. </p>
 
 <p>Implements <a class="el" href="class_player_base_state.html#a897c7c247658e249e1686ca93768cb56">PlayerBaseState</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_player_fall_state_8cs_source.html#l00055">55</a> of file <a class="el" href="_player_fall_state_8cs_source.html">PlayerFallState.cs</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_fall_state_ac4ffb4f092f24ef43fe8691836d8479d_icgraph.png" border="0" usemap="#aclass_player_fall_state_ac4ffb4f092f24ef43fe8691836d8479d_icgraph" alt=""/></div>
+<map name="aclass_player_fall_state_ac4ffb4f092f24ef43fe8691836d8479d_icgraph" id="aclass_player_fall_state_ac4ffb4f092f24ef43fe8691836d8479d_icgraph">
+<area shape="rect" title="Handles the gravity by the specifics of the state." alt="" coords="231,5,425,31"/>
+<area shape="rect" href="class_player_fall_state.html#a341ad67b5117b0534d52d634c6211120" title="Enter state is called once when the state is first accessed." alt="" coords="5,5,183,31"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -390,10 +467,26 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_player_base_state.html#ad258f2886473dc07441dd0efd3fc1ad0">PlayerBaseState</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_player_fall_state_8cs_source.html#l00029">29</a> of file <a class="el" href="_player_fall_state_8cs_source.html">PlayerFallState.cs</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_fall_state_a9079d7b4059d6381bfb1d4e876065c2e_cgraph.png" border="0" usemap="#aclass_player_fall_state_a9079d7b4059d6381bfb1d4e876065c2e_cgraph" alt=""/></div>
+<map name="aclass_player_fall_state_a9079d7b4059d6381bfb1d4e876065c2e_cgraph" id="aclass_player_fall_state_a9079d7b4059d6381bfb1d4e876065c2e_cgraph">
+<area shape="rect" title="Update state is called once per frame while the state is active." alt="" coords="5,55,192,80"/>
+<area shape="rect" href="class_player_fall_state.html#a8c149d72bf0c57d3535b0d091f08a8dc" title="Checks if the states should be switched and in that case it switches them." alt="" coords="240,47,431,87"/>
+<area shape="rect" href="class_player_state_factory.html#a4e2ed2f80ebb1caa1b3171a892d43ae1" title=" " alt="" coords="479,5,673,31"/>
+<area shape="rect" href="class_player_base_state.html#ac1e5506d31ad29b3da4a689dcce08fc9" title="Switches the current state with a new state." alt="" coords="479,55,673,80"/>
+<area shape="rect" href="class_player_state_factory.html#a78358203447f8f8f49028ea9b10a198c" title=" " alt="" coords="485,105,667,145"/>
+<area shape="rect" href="class_player_base_state.html#a24267cf1056b4efecdcd65c1c4588e69" title="Enter state is called once when the state is first accessed." alt="" coords="721,31,908,56"/>
+<area shape="rect" href="class_player_base_state.html#a65a04b56cdc784eabfc784fd9b5cb881" title="Exit state is called once when the state is going to be switched." alt="" coords="725,80,904,105"/>
+</map>
+</div>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Scripts/Player/StateMachine/States/<a class="el" href="_player_fall_state_8cs.html">PlayerFallState.cs</a></li>
+<li>Scripts/Player/StateMachine/States/<a class="el" href="_player_fall_state_8cs_source.html">PlayerFallState.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

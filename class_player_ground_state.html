@@ -112,12 +112,25 @@ $(document).ready(function(){initNavTree('class_player_ground_state.html',''); i
 <div class="dynheader">
 Inheritance diagram for PlayerGroundState:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_player_ground_state.png" usemap="#PlayerGroundState_map" alt=""/>
-  <map id="PlayerGroundState_map" name="PlayerGroundState_map">
-<area href="class_player_base_state.html" title="Abstract class defining the basic behaviour of any state part of the PlayerStateMachine." alt="PlayerBaseState" shape="rect" coords="0,0,119,24"/>
-  </map>
-</div></div>
+<div class="center"><img src="class_player_ground_state__inherit__graph.png" border="0" usemap="#a_player_ground_state_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_player_ground_state_inherit__map" id="a_player_ground_state_inherit__map">
+<area shape="rect" title="State that handles the logic of the player when it is grounded." alt="" coords="5,79,137,104"/>
+<area shape="rect" href="class_player_base_state.html" title="Abstract class defining the basic behaviour of any state part of the PlayerStateMachine." alt="" coords="11,5,131,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for PlayerGroundState:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_ground_state__coll__graph.png" border="0" usemap="#a_player_ground_state_coll__map" alt="Collaboration graph"/></div>
+<map name="a_player_ground_state_coll__map" id="a_player_ground_state_coll__map">
+<area shape="rect" title="State that handles the logic of the player when it is grounded." alt="" coords="90,331,222,356"/>
+<area shape="rect" href="class_player_base_state.html" title="Abstract class defining the basic behaviour of any state part of the PlayerStateMachine." alt="" coords="96,256,216,281"/>
+<area shape="rect" href="class_player_state_machine.html" title="State machine of the player that handles all the logic behind the character&#39;s movement." alt="" coords="5,168,144,193"/>
+<area shape="rect" title=" " alt="" coords="14,5,125,31"/>
+<area shape="rect" href="class_player_weapon.html" title="Controls the behaviour of the weapon the player uses." alt="" coords="91,80,197,105"/>
+<area shape="rect" href="class_player_state_factory.html" title="Factory pattern of the different states in the PlayerStateMachine." alt="" coords="169,168,303,193"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -178,6 +191,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>State that handles the logic of the player when it is grounded. </p>
+
+<p class="definition">Definition at line <a class="el" href="_player_ground_state_8cs_source.html#l00006">6</a> of file <a class="el" href="_player_ground_state_8cs_source.html">PlayerGroundState.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0b8cc0cbf063a3b9566be3232c06c108" name="a0b8cc0cbf063a3b9566be3232c06c108"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b8cc0cbf063a3b9566be3232c06c108">&#9670;&#160;</a></span>PlayerGroundState()</h2>
@@ -213,6 +228,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_player_ground_state_8cs_source.html#l00015">15</a> of file <a class="el" href="_player_ground_state_8cs_source.html">PlayerGroundState.cs</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -243,6 +260,31 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_player_base_state.html#ad557eef3590e0d82dd64a907d1a544b8">PlayerBaseState</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_player_ground_state_8cs_source.html#l00037">37</a> of file <a class="el" href="_player_ground_state_8cs_source.html">PlayerGroundState.cs</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_ground_state_a899f0b249af9a2481f5523731aff832c_cgraph.png" border="0" usemap="#aclass_player_ground_state_a899f0b249af9a2481f5523731aff832c_cgraph" alt=""/></div>
+<map name="aclass_player_ground_state_a899f0b249af9a2481f5523731aff832c_cgraph" id="aclass_player_ground_state_a899f0b249af9a2481f5523731aff832c_cgraph">
+<area shape="rect" title="Checks if the states should be switched and in that case it switches them." alt="" coords="5,73,217,113"/>
+<area shape="rect" href="class_player_state_factory.html#ad57941ba84beb6fbd3efb536693b345d" title=" " alt="" coords="275,5,451,31"/>
+<area shape="rect" href="class_player_state_factory.html#a4c350d713b28f293b51d2a4befc29059" title=" " alt="" coords="269,55,456,80"/>
+<area shape="rect" href="class_player_base_state.html#ac1e5506d31ad29b3da4a689dcce08fc9" title="Switches the current state with a new state." alt="" coords="265,104,460,129"/>
+<area shape="rect" href="class_player_state_factory.html#a78358203447f8f8f49028ea9b10a198c" title=" " alt="" coords="271,154,454,194"/>
+<area shape="rect" href="class_player_base_state.html#a24267cf1056b4efecdcd65c1c4588e69" title="Enter state is called once when the state is first accessed." alt="" coords="508,80,695,105"/>
+<area shape="rect" href="class_player_base_state.html#a65a04b56cdc784eabfc784fd9b5cb881" title="Exit state is called once when the state is going to be switched." alt="" coords="512,129,691,155"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_ground_state_a899f0b249af9a2481f5523731aff832c_icgraph.png" border="0" usemap="#aclass_player_ground_state_a899f0b249af9a2481f5523731aff832c_icgraph" alt=""/></div>
+<map name="aclass_player_ground_state_a899f0b249af9a2481f5523731aff832c_icgraph" id="aclass_player_ground_state_a899f0b249af9a2481f5523731aff832c_icgraph">
+<area shape="rect" title="Checks if the states should be switched and in that case it switches them." alt="" coords="231,5,443,45"/>
+<area shape="rect" href="class_player_ground_state.html#a99bb384dfb2198aae13a5745110485f2" title="Update state is called once per frame while the state is active." alt="" coords="5,5,183,45"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ab3953489b784d91ac1ca367fd8b94e67" name="ab3953489b784d91ac1ca367fd8b94e67"></a>
@@ -271,6 +313,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Enter state is called once when the state is first accessed. </p>
 
 <p>Implements <a class="el" href="class_player_base_state.html#a24267cf1056b4efecdcd65c1c4588e69">PlayerBaseState</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_player_ground_state_8cs_source.html#l00020">20</a> of file <a class="el" href="_player_ground_state_8cs_source.html">PlayerGroundState.cs</a>.</p>
 
 </div>
 </div>
@@ -301,6 +345,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_player_base_state.html#a65a04b56cdc784eabfc784fd9b5cb881">PlayerBaseState</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_player_ground_state_8cs_source.html#l00032">32</a> of file <a class="el" href="_player_ground_state_8cs_source.html">PlayerGroundState.cs</a>.</p>
+
 </div>
 </div>
 <a id="add5d4b8322cdc454abc19f0a80197509" name="add5d4b8322cdc454abc19f0a80197509"></a>
@@ -330,6 +376,17 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_player_base_state.html#ae417748ef2bf863092696d9cd422052f">PlayerBaseState</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_player_ground_state_8cs_source.html#l00058">58</a> of file <a class="el" href="_player_ground_state_8cs_source.html">PlayerGroundState.cs</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_ground_state_add5d4b8322cdc454abc19f0a80197509_icgraph.png" border="0" usemap="#aclass_player_ground_state_add5d4b8322cdc454abc19f0a80197509_icgraph" alt=""/></div>
+<map name="aclass_player_ground_state_add5d4b8322cdc454abc19f0a80197509_icgraph" id="aclass_player_ground_state_add5d4b8322cdc454abc19f0a80197509_icgraph">
+<area shape="rect" title="Handles the animations of the state." alt="" coords="231,5,407,45"/>
+<area shape="rect" href="class_player_ground_state.html#a99bb384dfb2198aae13a5745110485f2" title="Update state is called once per frame while the state is active." alt="" coords="5,5,183,45"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a4bbc899c55df18afbbc0ae7b953d4a08" name="a4bbc899c55df18afbbc0ae7b953d4a08"></a>
@@ -358,6 +415,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Handles the gravity by the specifics of the state. </p>
 
 <p>Implements <a class="el" href="class_player_base_state.html#a897c7c247658e249e1686ca93768cb56">PlayerBaseState</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_player_ground_state_8cs_source.html#l00076">76</a> of file <a class="el" href="_player_ground_state_8cs_source.html">PlayerGroundState.cs</a>.</p>
 
 </div>
 </div>
@@ -390,10 +449,28 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_player_base_state.html#ad258f2886473dc07441dd0efd3fc1ad0">PlayerBaseState</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_player_ground_state_8cs_source.html#l00026">26</a> of file <a class="el" href="_player_ground_state_8cs_source.html">PlayerGroundState.cs</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_ground_state_a99bb384dfb2198aae13a5745110485f2_cgraph.png" border="0" usemap="#aclass_player_ground_state_a99bb384dfb2198aae13a5745110485f2_cgraph" alt=""/></div>
+<map name="aclass_player_ground_state_a99bb384dfb2198aae13a5745110485f2_cgraph" id="aclass_player_ground_state_a99bb384dfb2198aae13a5745110485f2_cgraph">
+<area shape="rect" title="Update state is called once per frame while the state is active." alt="" coords="5,105,183,145"/>
+<area shape="rect" href="class_player_ground_state.html#a899f0b249af9a2481f5523731aff832c" title="Checks if the states should be switched and in that case it switches them." alt="" coords="231,73,443,113"/>
+<area shape="rect" href="class_player_ground_state.html#add5d4b8322cdc454abc19f0a80197509" title="Handles the animations of the state." alt="" coords="249,137,425,177"/>
+<area shape="rect" href="class_player_state_factory.html#ad57941ba84beb6fbd3efb536693b345d" title=" " alt="" coords="500,5,676,31"/>
+<area shape="rect" href="class_player_state_factory.html#a4c350d713b28f293b51d2a4befc29059" title=" " alt="" coords="495,55,681,80"/>
+<area shape="rect" href="class_player_base_state.html#ac1e5506d31ad29b3da4a689dcce08fc9" title="Switches the current state with a new state." alt="" coords="491,104,685,129"/>
+<area shape="rect" href="class_player_state_factory.html#a78358203447f8f8f49028ea9b10a198c" title=" " alt="" coords="497,154,679,194"/>
+<area shape="rect" href="class_player_base_state.html#a24267cf1056b4efecdcd65c1c4588e69" title="Enter state is called once when the state is first accessed." alt="" coords="733,80,920,105"/>
+<area shape="rect" href="class_player_base_state.html#a65a04b56cdc784eabfc784fd9b5cb881" title="Exit state is called once when the state is going to be switched." alt="" coords="737,129,916,155"/>
+</map>
+</div>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Scripts/Player/StateMachine/States/<a class="el" href="_player_ground_state_8cs.html">PlayerGroundState.cs</a></li>
+<li>Scripts/Player/StateMachine/States/<a class="el" href="_player_ground_state_8cs_source.html">PlayerGroundState.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

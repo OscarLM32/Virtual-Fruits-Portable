@@ -113,15 +113,27 @@ $(document).ready(function(){initNavTree('class_player_base_state.html',''); ini
 <div class="dynheader">
 Inheritance diagram for PlayerBaseState:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_player_base_state.png" usemap="#PlayerBaseState_map" alt=""/>
-  <map id="PlayerBaseState_map" name="PlayerBaseState_map">
-<area href="class_player_fall_state.html" title="State that handles the logic of the player when it is falling." alt="PlayerFallState" shape="rect" coords="0,56,167,80"/>
-<area href="class_player_ground_state.html" title="State that handles the logic of the player when it is grounded." alt="PlayerGroundState" shape="rect" coords="177,56,344,80"/>
-<area href="class_player_jumping_state.html" title="State that handles the logic of the player when it is jumping." alt="PlayerJumpingState" shape="rect" coords="354,56,521,80"/>
-<area href="class_player_vertical_dashing_state.html" title="State that handles the logic of the player when it is vertically dashing." alt="PlayerVerticalDashingState" shape="rect" coords="531,56,698,80"/>
-  </map>
-</div></div>
+<div class="center"><img src="class_player_base_state__inherit__graph.png" border="0" usemap="#a_player_base_state_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_player_base_state_inherit__map" id="a_player_base_state_inherit__map">
+<area shape="rect" title="Abstract class defining the basic behaviour of any state part of the PlayerStateMachine." alt="" coords="226,5,346,31"/>
+<area shape="rect" href="class_player_fall_state.html" title="State that handles the logic of the player when it is falling." alt="" coords="5,79,116,104"/>
+<area shape="rect" href="class_player_ground_state.html" title="State that handles the logic of the player when it is grounded." alt="" coords="140,79,272,104"/>
+<area shape="rect" href="class_player_jumping_state.html" title="State that handles the logic of the player when it is jumping." alt="" coords="297,79,435,104"/>
+<area shape="rect" href="class_player_vertical_dashing_state.html" title="State that handles the logic of the player when it is vertically dashing." alt="" coords="459,79,641,104"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for PlayerBaseState:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_base_state__coll__graph.png" border="0" usemap="#a_player_base_state_coll__map" alt="Collaboration graph"/></div>
+<map name="a_player_base_state_coll__map" id="a_player_base_state_coll__map">
+<area shape="rect" title="Abstract class defining the basic behaviour of any state part of the PlayerStateMachine." alt="" coords="96,256,216,281"/>
+<area shape="rect" href="class_player_state_machine.html" title="State machine of the player that handles all the logic behind the character&#39;s movement." alt="" coords="5,168,144,193"/>
+<area shape="rect" title=" " alt="" coords="14,5,125,31"/>
+<area shape="rect" href="class_player_weapon.html" title="Controls the behaviour of the weapon the player uses." alt="" coords="91,80,197,105"/>
+<area shape="rect" href="class_player_state_factory.html" title="Factory pattern of the different states in the PlayerStateMachine." alt="" coords="169,168,303,193"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -163,6 +175,8 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract class defining the basic behaviour of any state part of the <a class="el" href="class_player_state_machine.html" title="State machine of the player that handles all the logic behind the character&#39;s movement.">PlayerStateMachine</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_player_base_state_8cs_source.html#l00004">4</a> of file <a class="el" href="_player_base_state_8cs_source.html">PlayerBaseState.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4bf0189b187cdf2cf180094d71ddb215" name="a4bf0189b187cdf2cf180094d71ddb215"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4bf0189b187cdf2cf180094d71ddb215">&#9670;&#160;</a></span>PlayerBaseState()</h2>
@@ -197,6 +211,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_player_base_state_8cs_source.html#l00016">16</a> of file <a class="el" href="_player_base_state_8cs_source.html">PlayerBaseState.cs</a>.</p>
 
 </div>
 </div>
@@ -256,6 +272,23 @@ Protected Attributes</h2></td></tr>
 <p>Enter state is called once when the state is first accessed. </p>
 
 <p>Implemented in <a class="el" href="class_player_fall_state.html#a341ad67b5117b0534d52d634c6211120">PlayerFallState</a>, <a class="el" href="class_player_ground_state.html#ab3953489b784d91ac1ca367fd8b94e67">PlayerGroundState</a>, <a class="el" href="class_player_jumping_state.html#af411ff02a45f1ede54104596113960cf">PlayerJumpingState</a>, and <a class="el" href="class_player_vertical_dashing_state.html#a6c9670eb9b5f44b7a285bce5df7d308d">PlayerVerticalDashingState</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_base_state_a24267cf1056b4efecdcd65c1c4588e69_icgraph.png" border="0" usemap="#aclass_player_base_state_a24267cf1056b4efecdcd65c1c4588e69_icgraph" alt=""/></div>
+<map name="aclass_player_base_state_a24267cf1056b4efecdcd65c1c4588e69_icgraph" id="aclass_player_base_state_a24267cf1056b4efecdcd65c1c4588e69_icgraph">
+<area shape="rect" title="Enter state is called once when the state is first accessed." alt="" coords="743,109,929,134"/>
+<area shape="rect" href="class_player_base_state.html#ac1e5506d31ad29b3da4a689dcce08fc9" title="Switches the current state with a new state." alt="" coords="500,109,695,134"/>
+<area shape="rect" href="class_player_fall_state.html#a8c149d72bf0c57d3535b0d091f08a8dc" title="Checks if the states should be switched and in that case it switches them." alt="" coords="251,5,441,45"/>
+<area shape="rect" href="class_player_ground_state.html#a899f0b249af9a2481f5523731aff832c" title="Checks if the states should be switched and in that case it switches them." alt="" coords="240,69,452,109"/>
+<area shape="rect" href="class_player_jumping_state.html#ac63c9f14d09f70477170b271e125b6f1" title="Checks if the states should be switched and in that case it switches them." alt="" coords="257,133,435,173"/>
+<area shape="rect" href="class_player_vertical_dashing_state.html#adb5b4403c7854262baaccdda7044783a" title="Checks if the states should be switched and in that case it switches them." alt="" coords="253,197,439,237"/>
+<area shape="rect" href="class_player_fall_state.html#a9079d7b4059d6381bfb1d4e876065c2e" title="Update state is called once per frame while the state is active." alt="" coords="5,13,192,38"/>
+<area shape="rect" href="class_player_ground_state.html#a99bb384dfb2198aae13a5745110485f2" title="Update state is called once per frame while the state is active." alt="" coords="10,69,187,109"/>
+<area shape="rect" href="class_player_jumping_state.html#a70c3add0a46db8da9473cbe6fbb0ab3c" title="Update state is called once per frame while the state is active." alt="" coords="7,133,190,173"/>
+<area shape="rect" href="class_player_vertical_dashing_state.html#ad05a0949695ff6ccd8a3265d0d7666a6" title="Update state is called once per frame while the state is active." alt="" coords="6,197,191,237"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -285,6 +318,23 @@ Protected Attributes</h2></td></tr>
 <p>Exit state is called once when the state is going to be switched. </p>
 
 <p>Implemented in <a class="el" href="class_player_fall_state.html#aa974a442630cee5a4568c6ef99c2f2b9">PlayerFallState</a>, <a class="el" href="class_player_ground_state.html#aee926c2199695dd5004a9b1f8f507a0c">PlayerGroundState</a>, <a class="el" href="class_player_jumping_state.html#ab670a23ea7a6801dee230869a2516670">PlayerJumpingState</a>, and <a class="el" href="class_player_vertical_dashing_state.html#a68ea12d59f42e73c3a41abc2fd6b9541">PlayerVerticalDashingState</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_base_state_a65a04b56cdc784eabfc784fd9b5cb881_icgraph.png" border="0" usemap="#aclass_player_base_state_a65a04b56cdc784eabfc784fd9b5cb881_icgraph" alt=""/></div>
+<map name="aclass_player_base_state_a65a04b56cdc784eabfc784fd9b5cb881_icgraph" id="aclass_player_base_state_a65a04b56cdc784eabfc784fd9b5cb881_icgraph">
+<area shape="rect" title="Exit state is called once when the state is going to be switched." alt="" coords="743,109,921,134"/>
+<area shape="rect" href="class_player_base_state.html#ac1e5506d31ad29b3da4a689dcce08fc9" title="Switches the current state with a new state." alt="" coords="500,109,695,134"/>
+<area shape="rect" href="class_player_fall_state.html#a8c149d72bf0c57d3535b0d091f08a8dc" title="Checks if the states should be switched and in that case it switches them." alt="" coords="251,5,441,45"/>
+<area shape="rect" href="class_player_ground_state.html#a899f0b249af9a2481f5523731aff832c" title="Checks if the states should be switched and in that case it switches them." alt="" coords="240,69,452,109"/>
+<area shape="rect" href="class_player_jumping_state.html#ac63c9f14d09f70477170b271e125b6f1" title="Checks if the states should be switched and in that case it switches them." alt="" coords="257,133,435,173"/>
+<area shape="rect" href="class_player_vertical_dashing_state.html#adb5b4403c7854262baaccdda7044783a" title="Checks if the states should be switched and in that case it switches them." alt="" coords="253,197,439,237"/>
+<area shape="rect" href="class_player_fall_state.html#a9079d7b4059d6381bfb1d4e876065c2e" title="Update state is called once per frame while the state is active." alt="" coords="5,13,192,38"/>
+<area shape="rect" href="class_player_ground_state.html#a99bb384dfb2198aae13a5745110485f2" title="Update state is called once per frame while the state is active." alt="" coords="10,69,187,109"/>
+<area shape="rect" href="class_player_jumping_state.html#a70c3add0a46db8da9473cbe6fbb0ab3c" title="Update state is called once per frame while the state is active." alt="" coords="7,133,190,173"/>
+<area shape="rect" href="class_player_vertical_dashing_state.html#ad05a0949695ff6ccd8a3265d0d7666a6" title="Update state is called once per frame while the state is active." alt="" coords="6,197,191,237"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -378,6 +428,34 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_player_base_state_8cs_source.html#l00049">49</a> of file <a class="el" href="_player_base_state_8cs_source.html">PlayerBaseState.cs</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_base_state_ac1e5506d31ad29b3da4a689dcce08fc9_cgraph.png" border="0" usemap="#aclass_player_base_state_ac1e5506d31ad29b3da4a689dcce08fc9_cgraph" alt=""/></div>
+<map name="aclass_player_base_state_ac1e5506d31ad29b3da4a689dcce08fc9_cgraph" id="aclass_player_base_state_ac1e5506d31ad29b3da4a689dcce08fc9_cgraph">
+<area shape="rect" title="Switches the current state with a new state." alt="" coords="5,31,200,56"/>
+<area shape="rect" href="class_player_base_state.html#a24267cf1056b4efecdcd65c1c4588e69" title="Enter state is called once when the state is first accessed." alt="" coords="248,5,435,31"/>
+<area shape="rect" href="class_player_base_state.html#a65a04b56cdc784eabfc784fd9b5cb881" title="Exit state is called once when the state is going to be switched." alt="" coords="252,55,431,80"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_base_state_ac1e5506d31ad29b3da4a689dcce08fc9_icgraph.png" border="0" usemap="#aclass_player_base_state_ac1e5506d31ad29b3da4a689dcce08fc9_icgraph" alt=""/></div>
+<map name="aclass_player_base_state_ac1e5506d31ad29b3da4a689dcce08fc9_icgraph" id="aclass_player_base_state_ac1e5506d31ad29b3da4a689dcce08fc9_icgraph">
+<area shape="rect" title="Switches the current state with a new state." alt="" coords="500,109,695,134"/>
+<area shape="rect" href="class_player_fall_state.html#a8c149d72bf0c57d3535b0d091f08a8dc" title="Checks if the states should be switched and in that case it switches them." alt="" coords="251,5,441,45"/>
+<area shape="rect" href="class_player_ground_state.html#a899f0b249af9a2481f5523731aff832c" title="Checks if the states should be switched and in that case it switches them." alt="" coords="240,69,452,109"/>
+<area shape="rect" href="class_player_jumping_state.html#ac63c9f14d09f70477170b271e125b6f1" title="Checks if the states should be switched and in that case it switches them." alt="" coords="257,133,435,173"/>
+<area shape="rect" href="class_player_vertical_dashing_state.html#adb5b4403c7854262baaccdda7044783a" title="Checks if the states should be switched and in that case it switches them." alt="" coords="253,197,439,237"/>
+<area shape="rect" href="class_player_fall_state.html#a9079d7b4059d6381bfb1d4e876065c2e" title="Update state is called once per frame while the state is active." alt="" coords="5,13,192,38"/>
+<area shape="rect" href="class_player_ground_state.html#a99bb384dfb2198aae13a5745110485f2" title="Update state is called once per frame while the state is active." alt="" coords="10,69,187,109"/>
+<area shape="rect" href="class_player_jumping_state.html#a70c3add0a46db8da9473cbe6fbb0ab3c" title="Update state is called once per frame while the state is active." alt="" coords="7,133,190,173"/>
+<area shape="rect" href="class_player_vertical_dashing_state.html#ad05a0949695ff6ccd8a3265d0d7666a6" title="Update state is called once per frame while the state is active." alt="" coords="6,197,191,237"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ad258f2886473dc07441dd0efd3fc1ad0" name="ad258f2886473dc07441dd0efd3fc1ad0"></a>
@@ -434,6 +512,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Updated context of the state of the whole state machine. </p>
 
+<p class="definition">Definition at line <a class="el" href="_player_base_state_8cs_source.html#l00009">9</a> of file <a class="el" href="_player_base_state_8cs_source.html">PlayerBaseState.cs</a>.</p>
+
 </div>
 </div>
 <a id="a5de49c3d7425938edd0c25d88cf36aab" name="a5de49c3d7425938edd0c25d88cf36aab"></a>
@@ -458,10 +538,12 @@ Protected Attributes</h2></td></tr>
 
 <p>Reference to the factory of the states in the state machine. </p>
 
+<p class="definition">Definition at line <a class="el" href="_player_base_state_8cs_source.html#l00014">14</a> of file <a class="el" href="_player_base_state_8cs_source.html">PlayerBaseState.cs</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Scripts/Player/StateMachine/<a class="el" href="_player_base_state_8cs.html">PlayerBaseState.cs</a></li>
+<li>Scripts/Player/StateMachine/<a class="el" href="_player_base_state_8cs_source.html">PlayerBaseState.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

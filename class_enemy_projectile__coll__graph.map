@@ -1,0 +1,8 @@
+<map id="EnemyProjectile" name="EnemyProjectile">
+<area shape="rect" id="node1" title="Generic class of a projectile created by an enemy." alt="" coords="23,269,141,295"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,93,116,119"/>
+<area shape="rect" id="node3" href="$class_sound_player.html" title="Handles the logic behind setting up the audio sources and playing the audios tracks of any GameObject..." alt="" coords="98,181,194,207"/>
+<area shape="rect" id="node4" href="$class_sound_list.html" title="An ScriptableObject containing a list of sounds from the class Sound." alt="" coords="141,93,221,119"/>
+<area shape="rect" id="node5" title=" " alt="" coords="64,5,183,31"/>
+<area shape="rect" id="node6" href="$class_sound.html" title="Class representing a sound effect or soundtrack to be played." alt="" coords="207,5,266,31"/>
+</map>

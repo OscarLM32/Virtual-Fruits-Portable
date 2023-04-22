@@ -54,7 +54,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_ads_manager_8cs.html",
-"class_sound.html#a0416eabc4e98e757737e056a20ee8b5f"
+"class_player_state_machine.html#ae4eb36e9a4ab021e7cd7502c9496f35b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
